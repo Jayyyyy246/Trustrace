@@ -1,0 +1,86 @@
+{
+  "dataset_root": "C:\\Users\\jay\\Downloads\\STFD_ICASSP2023\\STFD_ICASSP2023",
+  "audit_timestamp": "2026-10-06T16:16:58Z",
+  "audit_runtime_seconds": 108.59,
+  "total_files": 7865,
+  "total_images": 3932,
+  "total_masks": 3932,
+  "valid_images": 3932,
+  "corrupt_images": 0,
+  "valid_image_mask_pairs": 3932,
+  "missing_masks_count": 0,
+  "orphan_masks_count": 0,
+  "dimension_mismatches_count": 0,
+  "exact_duplicates_count": 0,
+  "perceptual_hashing": {
+    "supported": false,
+    "status": "imagehash library is not installed in the environment (not installed automatically per audit policy)"
+  },
+  "manipulation_categories": {
+    "1_Copy-move": {
+      "images": 758,
+      "masks": 758
+    },
+    "2_Splicing": {
+      "images": 830,
+      "masks": 830
+    },
+    "3_Removal": {
+      "images": 1016,
+      "masks": 1016
+    },
+    "4_Insertion": {
+      "images": 701,
+      "masks": 701
+    },
+    "5_Replacement": {
+      "images": 627,
+      "masks": 627
+    }
+  },
+  "payment_samples_identified": 0,
+  "banking_samples_identified": 52,
+  "payment_banking_note": "STFD encodes neither scene categories nor banking/payment labels in the folder or file structure. Filenames are opaque 32-character MD5 hashes without metadata tables. No samples can be labeled as payment/banking without separate computer-vision text/UI inspection.",
+  "image_dimensions_distribution": {
+    "1080x2340": 2665,
+    "1080x2400": 504,
+    "750x1334": 138,
+    "1080x2376": 100,
+    "1080x2316": 96,
+    "1080x1920": 91,
+    "2340x1080": 80,
+    "828x1792": 68,
+    "1125x2436": 56,
+    "1170x2532": 53,
+    "1536x2048": 34,
+    "1668x2224": 32,
+    "2224x1668": 9,
+    "2048x1536": 5,
+    "1079x1976": 1
+  },
+  "files_per_folder": {
+    ".": 1,
+    "1_Copy-move": 0,
+    "1_Copy-move\\masks": 758,
+    "1_Copy-move\\tamper": 758,
+    "2_Splicing": 0,
+    "2_Splicing\\masks": 830,
+    "2_Splicing\\tamper": 830,
+    "3_Removal": 0,
+    "3_Removal\\masks": 1016,
+    "3_Removal\\tamper": 1016,
+    "4_Insertion": 0,
+    "4_Insertion\\masks": 701,
+    "4_Insertion\\tamper": 701,
+    "5_Replacement": 0,
+    "5_Replacement\\masks": 627,
+    "5_Replacement\\tamper": 627,
+    "STFD_ICASSP2023": 0,
+    "STFD_ICASSP2023\\1_Copy-move": 0,
+    "STFD_ICASSP2023\\1_Copy-move\\masks": 0
+  },
+  "corrupted_files_list": [],
+  "dimension_mismatches_list": [],
+  "missing_masks_list": [],
+  "orphan_masks_list": []
+}

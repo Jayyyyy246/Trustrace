@@ -1,0 +1,95 @@
+{
+  "model_architecture": "mobilenet_v3_small",
+  "task": "STFD 5-Class Manipulation Classification",
+  "checkpoint_epoch": 4,
+  "dataset": {
+    "test_manifest": "trusttrace_stfd_clustered_test.csv",
+    "test_samples": 590,
+    "classes": [
+      "COPY_MOVE",
+      "SPLICING",
+      "REMOVAL",
+      "INSERTION",
+      "REPLACEMENT"
+    ]
+  },
+  "metrics": {
+    "test_accuracy": 0.3389830508474576,
+    "test_macro_precision": 0.30212314187885486,
+    "test_macro_recall": 0.3194130965712153,
+    "test_macro_f1": 0.30235951757092094,
+    "test_weighted_f1": 0.3194757450468815,
+    "per_class": {
+      "COPY_MOVE": {
+        "precision": 0.3687150837988827,
+        "recall": 0.5789473684210527,
+        "f1": 0.45051194539249145,
+        "support": 114
+      },
+      "SPLICING": {
+        "precision": 0.28440366972477066,
+        "recall": 0.248,
+        "f1": 0.26495726495726496,
+        "support": 125
+      },
+      "REMOVAL": {
+        "precision": 0.43352601156069365,
+        "recall": 0.4934210526315789,
+        "f1": 0.46153846153846156,
+        "support": 152
+      },
+      "INSERTION": {
+        "precision": 0.2714285714285714,
+        "recall": 0.18095238095238095,
+        "f1": 0.21714285714285714,
+        "support": 105
+      },
+      "REPLACEMENT": {
+        "precision": 0.15254237288135594,
+        "recall": 0.09574468085106383,
+        "f1": 0.11764705882352941,
+        "support": 94
+      }
+    }
+  },
+  "confusion_matrix": [
+    [
+      66,
+      14,
+      18,
+      10,
+      6
+    ],
+    [
+      31,
+      31,
+      29,
+      21,
+      13
+    ],
+    [
+      28,
+      21,
+      75,
+      10,
+      18
+    ],
+    [
+      35,
+      19,
+      19,
+      19,
+      13
+    ],
+    [
+      19,
+      24,
+      32,
+      10,
+      9
+    ]
+  ],
+  "evaluation_time_seconds": 23.096851587295532,
+  "timestamp": "2026-10-06 23:49:16",
+  "disclaimer": "This benchmark evaluates the STFD 5-class manipulation classification model, not the final TRUSTTRACE authenticity pipeline."
+}

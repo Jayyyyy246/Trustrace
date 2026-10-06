@@ -203,16 +203,20 @@ class ForensicTrainer:
         # Load best weights
         model.load_state_dict(best_model_weights)
 
-        # Save checkpoint weights
+        # Save checkpoint weights (both .pt and .pth for universal compatibility)
         checkpoint_filename = f"{self.model_version}.pt"
         checkpoint_path = self.checkpoints_dir / checkpoint_filename
-        torch.save({
+        save_dict = {
             "model_version": self.model_version,
             "architecture": self.architecture,
             "state_dict": model.state_dict(),
             "class_mapping": CLASS_TO_IDX,
             "config": self.config.__dict__,
-        }, checkpoint_path)
+        }
+        torch.save(save_dict, checkpoint_path)
+        pth_path = self.checkpoints_dir / f"{self.model_version}.pth"
+        import shutil
+        shutil.copyfile(checkpoint_path, pth_path)
 
         # Compute SHA-256 Checksum
         sha256 = compute_sha256(checkpoint_path)

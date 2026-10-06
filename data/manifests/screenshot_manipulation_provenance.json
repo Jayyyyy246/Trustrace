@@ -1,0 +1,682 @@
+[
+  {
+    "generated_image_id": "manip_test_payment_proof_numeric_alteration_v0_a5ed3d20_1791035862_0.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_test_payment_proof_numeric_alteration_v0_a5ed3d20_1791035862_0.png",
+    "generated_image_sha256": "e43324a9954c8a818ac8a32365be0a9897d0e9ae827851a7063c8f4f1002093b",
+    "source_image_id": "test_payment_proof.jpg",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\test_payment_proof.jpg",
+    "source_image_sha256": "a5ed3d2057da78a54c09c52a8ca6943ffe17338b8637435709420c585ff7c22f",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "numeric_alteration",
+    "transformation_parameters": {
+      "transformation": "numeric_alteration",
+      "bounding_box": [
+        292,
+        810,
+        585,
+        202
+      ],
+      "injected_text": "$4,850.00",
+      "fill_color": [
+        24,
+        28,
+        37
+      ],
+      "variation_seed": 0
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.390395+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_mobile_banking_iphone_text_alteration_v1_29b3761b_1791035862_1.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_mobile_banking_iphone_text_alteration_v1_29b3761b_1791035862_1.png",
+    "generated_image_sha256": "c3553115b2f7adcf74367e75bdbd18775a37af3a113e13522f1dd6891150375c",
+    "source_image_id": "base_mobile_banking_iphone.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_mobile_banking_iphone.png",
+    "source_image_sha256": "29b3761b8fa0366458911d297229a741008f662cf8cf0923f8af4eaf427d387d",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "text_alteration",
+    "transformation_parameters": {
+      "transformation": "text_alteration",
+      "bounding_box": [
+        175,
+        1164,
+        819,
+        151
+      ],
+      "replacement_text": "Wire Transfer Completed - Cleared",
+      "baseline_displacement_px": 2,
+      "variation_seed": 1
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.454545+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_android_receipt_timestamp_modification_v2_87143182_1791035862_2.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_android_receipt_timestamp_modification_v2_87143182_1791035862_2.png",
+    "generated_image_sha256": "ae42e1c813caa52165b7349c21eede3107725e5d4701e2d1898ca9588d71d297",
+    "source_image_id": "base_android_receipt.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_android_receipt.png",
+    "source_image_sha256": "87143182d0aa6618507bcdfcd6b58c6c9a177b0a83ac361e8936fa3d194b6c4e",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "timestamp_modification",
+    "transformation_parameters": {
+      "transformation": "timestamp_modification",
+      "bounding_box": [
+        108,
+        192,
+        432,
+        96
+      ],
+      "new_timestamp": "Yesterday at 11:58 PM",
+      "variation_seed": 2
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.511461+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_desktop_invoice_ui_element_splicing_v3_2cc4697b_1791035862_3.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_desktop_invoice_ui_element_splicing_v3_2cc4697b_1791035862_3.png",
+    "generated_image_sha256": "be720bd91e3659a384f25410700241ff0622b1c5c36359f55d776d74ef21dc09",
+    "source_image_id": "base_desktop_invoice.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_desktop_invoice.png",
+    "source_image_sha256": "2cc4697bc6cb171a33e63ac665842b73d63000a2d215ca826a6432c73dcf249f",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "ui_element_splicing",
+    "transformation_parameters": {
+      "transformation": "ui_element_splicing",
+      "source_crop": [
+        80,
+        60,
+        160,
+        60
+      ],
+      "destination_pos": [
+        400,
+        480
+      ],
+      "spliced_element": "official_badge",
+      "variation_seed": 3
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.534128+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_chat_proof_ui_region_compositing_v4_085c2284_1791035862_4.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_chat_proof_ui_region_compositing_v4_085c2284_1791035862_4.png",
+    "generated_image_sha256": "28b78dd9665f62729dfc70e323f7712e4d03331109b14f2881fe8a2b08e8d17d",
+    "source_image_id": "base_chat_proof.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_chat_proof.png",
+    "source_image_sha256": "085c22841f357ce504221565d41d4a7ff31ef281bbc89a565a65c80f22e69bc3",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "ui_region_compositing",
+    "transformation_parameters": {
+      "transformation": "ui_region_compositing",
+      "bounding_box": [
+        75,
+        787,
+        600,
+        333
+      ],
+      "composited_elements": [
+        "status_header",
+        "reference_number",
+        "auth_code"
+      ],
+      "reference_number": "TR-995348",
+      "auth_code": "468-192-924",
+      "variation_seed": 4
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.568692+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_test_payment_proof_numeric_alteration_v5_a5ed3d20_1791035862_5.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_test_payment_proof_numeric_alteration_v5_a5ed3d20_1791035862_5.png",
+    "generated_image_sha256": "6f0bf66ef16576a0dd6bf77a7a0819dd4425604338cd4afef787640465a675dd",
+    "source_image_id": "test_payment_proof.jpg",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\test_payment_proof.jpg",
+    "source_image_sha256": "a5ed3d2057da78a54c09c52a8ca6943ffe17338b8637435709420c585ff7c22f",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "numeric_alteration",
+    "transformation_parameters": {
+      "transformation": "numeric_alteration",
+      "bounding_box": [
+        292,
+        911,
+        585,
+        202
+      ],
+      "injected_text": "$1,890.25",
+      "fill_color": [
+        24,
+        28,
+        37
+      ],
+      "variation_seed": 5
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.621352+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_mobile_banking_iphone_text_alteration_v6_29b3761b_1791035862_6.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_mobile_banking_iphone_text_alteration_v6_29b3761b_1791035862_6.png",
+    "generated_image_sha256": "38a6bfd138753f11f40b1e81a77f8b4165edcc1d29d5d635a060f039d067e974",
+    "source_image_id": "base_mobile_banking_iphone.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_mobile_banking_iphone.png",
+    "source_image_sha256": "29b3761b8fa0366458911d297229a741008f662cf8cf0923f8af4eaf427d387d",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "text_alteration",
+    "transformation_parameters": {
+      "transformation": "text_alteration",
+      "bounding_box": [
+        175,
+        1266,
+        819,
+        151
+      ],
+      "replacement_text": "Payment Approved - Verified Account",
+      "baseline_displacement_px": 1,
+      "variation_seed": 6
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.672157+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_android_receipt_timestamp_modification_v7_87143182_1791035862_7.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_android_receipt_timestamp_modification_v7_87143182_1791035862_7.png",
+    "generated_image_sha256": "e082fba923a8e48091f3fa9574790fd005740aa98b5ad225f93f2ba88d311ee6",
+    "source_image_id": "base_android_receipt.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_android_receipt.png",
+    "source_image_sha256": "87143182d0aa6618507bcdfcd6b58c6c9a177b0a83ac361e8936fa3d194b6c4e",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "timestamp_modification",
+    "transformation_parameters": {
+      "transformation": "timestamp_modification",
+      "bounding_box": [
+        108,
+        144,
+        432,
+        96
+      ],
+      "new_timestamp": "Oct 03, 2026 14:22:10 UTC",
+      "variation_seed": 7
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.715186+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_desktop_invoice_ui_element_splicing_v8_2cc4697b_1791035862_8.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_desktop_invoice_ui_element_splicing_v8_2cc4697b_1791035862_8.png",
+    "generated_image_sha256": "4d93645b8da89405fd6f094b07cac7fed1ee77f89b59ed91ab8ed695fa55f111",
+    "source_image_id": "base_desktop_invoice.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_desktop_invoice.png",
+    "source_image_sha256": "2cc4697bc6cb171a33e63ac665842b73d63000a2d215ca826a6432c73dcf249f",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "ui_element_splicing",
+    "transformation_parameters": {
+      "transformation": "ui_element_splicing",
+      "source_crop": [
+        80,
+        60,
+        160,
+        60
+      ],
+      "destination_pos": [
+        560,
+        390
+      ],
+      "spliced_element": "official_badge",
+      "variation_seed": 8
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.738256+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_chat_proof_ui_region_compositing_v9_085c2284_1791035862_9.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_chat_proof_ui_region_compositing_v9_085c2284_1791035862_9.png",
+    "generated_image_sha256": "54792d2fd5daeb926aeb1fdb3e528f9df795ade72a9a2f44f80a70fd3fba775b",
+    "source_image_id": "base_chat_proof.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_chat_proof.png",
+    "source_image_sha256": "085c22841f357ce504221565d41d4a7ff31ef281bbc89a565a65c80f22e69bc3",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "ui_region_compositing",
+    "transformation_parameters": {
+      "transformation": "ui_region_compositing",
+      "bounding_box": [
+        75,
+        733,
+        600,
+        333
+      ],
+      "composited_elements": [
+        "status_header",
+        "reference_number",
+        "auth_code"
+      ],
+      "reference_number": "TR-992034",
+      "auth_code": "553-307-880",
+      "variation_seed": 9
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.766854+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_test_payment_proof_numeric_alteration_v10_a5ed3d20_1791035862_10.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_test_payment_proof_numeric_alteration_v10_a5ed3d20_1791035862_10.png",
+    "generated_image_sha256": "32922f2b706aeeebf7c64ec20ea254920a99245a0c3c6e018e5c03c77e5f5098",
+    "source_image_id": "test_payment_proof.jpg",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\test_payment_proof.jpg",
+    "source_image_sha256": "a5ed3d2057da78a54c09c52a8ca6943ffe17338b8637435709420c585ff7c22f",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "numeric_alteration",
+    "transformation_parameters": {
+      "transformation": "numeric_alteration",
+      "bounding_box": [
+        292,
+        1012,
+        585,
+        202
+      ],
+      "injected_text": "$4,850.00",
+      "fill_color": [
+        24,
+        28,
+        37
+      ],
+      "variation_seed": 10
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.822456+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_mobile_banking_iphone_text_alteration_v11_29b3761b_1791035862_11.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_mobile_banking_iphone_text_alteration_v11_29b3761b_1791035862_11.png",
+    "generated_image_sha256": "6c872fa23c86b82090f8989cc69c916a7b9e18cc670ee58ab098a96fac09eb76",
+    "source_image_id": "base_mobile_banking_iphone.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_mobile_banking_iphone.png",
+    "source_image_sha256": "29b3761b8fa0366458911d297229a741008f662cf8cf0923f8af4eaf427d387d",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "text_alteration",
+    "transformation_parameters": {
+      "transformation": "text_alteration",
+      "bounding_box": [
+        175,
+        1367,
+        819,
+        151
+      ],
+      "replacement_text": "Merchant Transaction Approved #8812",
+      "baseline_displacement_px": 3,
+      "variation_seed": 11
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.880464+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_android_receipt_timestamp_modification_v12_87143182_1791035862_12.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_android_receipt_timestamp_modification_v12_87143182_1791035862_12.png",
+    "generated_image_sha256": "37388ed9ac60a3e728a41907372d8b3634cdfa80467d0f4832194db120dd5486",
+    "source_image_id": "base_android_receipt.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_android_receipt.png",
+    "source_image_sha256": "87143182d0aa6618507bcdfcd6b58c6c9a177b0a83ac361e8936fa3d194b6c4e",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "timestamp_modification",
+    "transformation_parameters": {
+      "transformation": "timestamp_modification",
+      "bounding_box": [
+        108,
+        96,
+        432,
+        96
+      ],
+      "new_timestamp": "Today at 09:41 AM",
+      "variation_seed": 12
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.933323+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_desktop_invoice_ui_element_splicing_v13_2cc4697b_1791035862_13.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_desktop_invoice_ui_element_splicing_v13_2cc4697b_1791035862_13.png",
+    "generated_image_sha256": "d4f00ee547cef43a7d5d297df3af796835aab607f49e13264701d0eb6405ad44",
+    "source_image_id": "base_desktop_invoice.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_desktop_invoice.png",
+    "source_image_sha256": "2cc4697bc6cb171a33e63ac665842b73d63000a2d215ca826a6432c73dcf249f",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "ui_element_splicing",
+    "transformation_parameters": {
+      "transformation": "ui_element_splicing",
+      "source_crop": [
+        80,
+        60,
+        160,
+        60
+      ],
+      "destination_pos": [
+        480,
+        420
+      ],
+      "spliced_element": "official_badge",
+      "variation_seed": 13
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.956642+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_chat_proof_ui_region_compositing_v14_085c2284_1791035862_14.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_chat_proof_ui_region_compositing_v14_085c2284_1791035862_14.png",
+    "generated_image_sha256": "0ec49ffdcedc3e5dba43236b90f40fe04949941cce68072bc1512f334007f44a",
+    "source_image_id": "base_chat_proof.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_chat_proof.png",
+    "source_image_sha256": "085c22841f357ce504221565d41d4a7ff31ef281bbc89a565a65c80f22e69bc3",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "ui_region_compositing",
+    "transformation_parameters": {
+      "transformation": "ui_region_compositing",
+      "bounding_box": [
+        75,
+        840,
+        600,
+        333
+      ],
+      "composited_elements": [
+        "status_header",
+        "reference_number",
+        "auth_code"
+      ],
+      "reference_number": "TR-998719",
+      "auth_code": "638-422-836",
+      "variation_seed": 14
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:42.988557+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_test_payment_proof_numeric_alteration_v15_a5ed3d20_1791035863_15.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_test_payment_proof_numeric_alteration_v15_a5ed3d20_1791035863_15.png",
+    "generated_image_sha256": "f44a291b2643ace60b432006561f2f29442000991ec6828a9ff59f033f712e3a",
+    "source_image_id": "test_payment_proof.jpg",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\test_payment_proof.jpg",
+    "source_image_sha256": "a5ed3d2057da78a54c09c52a8ca6943ffe17338b8637435709420c585ff7c22f",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "numeric_alteration",
+    "transformation_parameters": {
+      "transformation": "numeric_alteration",
+      "bounding_box": [
+        292,
+        1114,
+        585,
+        202
+      ],
+      "injected_text": "$1,890.25",
+      "fill_color": [
+        24,
+        28,
+        37
+      ],
+      "variation_seed": 15
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:43.042154+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_mobile_banking_iphone_text_alteration_v16_29b3761b_1791035863_16.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_mobile_banking_iphone_text_alteration_v16_29b3761b_1791035863_16.png",
+    "generated_image_sha256": "0f31ef200f9ef39e8ef38b45ab03a1a717cd3f3086a79d050bf005c77263be78",
+    "source_image_id": "base_mobile_banking_iphone.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_mobile_banking_iphone.png",
+    "source_image_sha256": "29b3761b8fa0366458911d297229a741008f662cf8cf0923f8af4eaf427d387d",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "text_alteration",
+    "transformation_parameters": {
+      "transformation": "text_alteration",
+      "bounding_box": [
+        175,
+        1063,
+        819,
+        151
+      ],
+      "replacement_text": "Funds Released to Recipient Account",
+      "baseline_displacement_px": 2,
+      "variation_seed": 16
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:43.097274+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_android_receipt_timestamp_modification_v17_87143182_1791035863_17.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_android_receipt_timestamp_modification_v17_87143182_1791035863_17.png",
+    "generated_image_sha256": "2ad55543e010accd197c29dd3d22306a89109cad2a3ccb1ecd83211c072eddf7",
+    "source_image_id": "base_android_receipt.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_android_receipt.png",
+    "source_image_sha256": "87143182d0aa6618507bcdfcd6b58c6c9a177b0a83ac361e8936fa3d194b6c4e",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "timestamp_modification",
+    "transformation_parameters": {
+      "transformation": "timestamp_modification",
+      "bounding_box": [
+        108,
+        192,
+        432,
+        96
+      ],
+      "new_timestamp": "09:14 AM - Complete",
+      "variation_seed": 17
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:43.148847+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_desktop_invoice_ui_element_splicing_v18_2cc4697b_1791035863_18.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_desktop_invoice_ui_element_splicing_v18_2cc4697b_1791035863_18.png",
+    "generated_image_sha256": "0412b67fc5dab29b9f52649cb0bafc0c26add9ec1583ef1259cfa4142f2183be",
+    "source_image_id": "base_desktop_invoice.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_desktop_invoice.png",
+    "source_image_sha256": "2cc4697bc6cb171a33e63ac665842b73d63000a2d215ca826a6432c73dcf249f",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "ui_element_splicing",
+    "transformation_parameters": {
+      "transformation": "ui_element_splicing",
+      "source_crop": [
+        80,
+        60,
+        160,
+        60
+      ],
+      "destination_pos": [
+        400,
+        450
+      ],
+      "spliced_element": "official_badge",
+      "variation_seed": 18
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:43.173770+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_chat_proof_ui_region_compositing_v19_085c2284_1791035863_19.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_chat_proof_ui_region_compositing_v19_085c2284_1791035863_19.png",
+    "generated_image_sha256": "ccbfd2f06fad5b2de2c345a7a69b3ac46d19fd48bc7bcd7889e794ee7d629002",
+    "source_image_id": "base_chat_proof.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_chat_proof.png",
+    "source_image_sha256": "085c22841f357ce504221565d41d4a7ff31ef281bbc89a565a65c80f22e69bc3",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "ui_region_compositing",
+    "transformation_parameters": {
+      "transformation": "ui_region_compositing",
+      "bounding_box": [
+        75,
+        787,
+        600,
+        333
+      ],
+      "composited_elements": [
+        "status_header",
+        "reference_number",
+        "auth_code"
+      ],
+      "reference_number": "TR-995405",
+      "auth_code": "723-537-991",
+      "variation_seed": 19
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:43.202551+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_test_payment_proof_numeric_alteration_v20_a5ed3d20_1791035863_20.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_test_payment_proof_numeric_alteration_v20_a5ed3d20_1791035863_20.png",
+    "generated_image_sha256": "e43324a9954c8a818ac8a32365be0a9897d0e9ae827851a7063c8f4f1002093b",
+    "source_image_id": "test_payment_proof.jpg",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\test_payment_proof.jpg",
+    "source_image_sha256": "a5ed3d2057da78a54c09c52a8ca6943ffe17338b8637435709420c585ff7c22f",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "numeric_alteration",
+    "transformation_parameters": {
+      "transformation": "numeric_alteration",
+      "bounding_box": [
+        292,
+        810,
+        585,
+        202
+      ],
+      "injected_text": "$4,850.00",
+      "fill_color": [
+        24,
+        28,
+        37
+      ],
+      "variation_seed": 20
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:43.256527+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_mobile_banking_iphone_text_alteration_v21_29b3761b_1791035863_21.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_mobile_banking_iphone_text_alteration_v21_29b3761b_1791035863_21.png",
+    "generated_image_sha256": "68733967f20e4c9c0d2d6e476807b8efefe7c4eb325cc2808b847ce93152c4cb",
+    "source_image_id": "base_mobile_banking_iphone.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_mobile_banking_iphone.png",
+    "source_image_sha256": "29b3761b8fa0366458911d297229a741008f662cf8cf0923f8af4eaf427d387d",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "text_alteration",
+    "transformation_parameters": {
+      "transformation": "text_alteration",
+      "bounding_box": [
+        175,
+        1164,
+        819,
+        151
+      ],
+      "replacement_text": "Direct Deposit Confirmed by System",
+      "baseline_displacement_px": 1,
+      "variation_seed": 21
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:43.310513+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_android_receipt_timestamp_modification_v22_87143182_1791035863_22.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_android_receipt_timestamp_modification_v22_87143182_1791035863_22.png",
+    "generated_image_sha256": "143f5550b173d99b951838ada4effb882edcfb2a3f888e1385dfd96e8c74e688",
+    "source_image_id": "base_android_receipt.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_android_receipt.png",
+    "source_image_sha256": "87143182d0aa6618507bcdfcd6b58c6c9a177b0a83ac361e8936fa3d194b6c4e",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "timestamp_modification",
+    "transformation_parameters": {
+      "transformation": "timestamp_modification",
+      "bounding_box": [
+        108,
+        144,
+        432,
+        96
+      ],
+      "new_timestamp": "Just now (0.2s ago)",
+      "variation_seed": 22
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:43.356630+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_desktop_invoice_ui_element_splicing_v23_2cc4697b_1791035863_23.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_desktop_invoice_ui_element_splicing_v23_2cc4697b_1791035863_23.png",
+    "generated_image_sha256": "463fce772ae002cb41ad887fb4c0219e2a1eff8d6556a9f81384fd8dd0384364",
+    "source_image_id": "base_desktop_invoice.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_desktop_invoice.png",
+    "source_image_sha256": "2cc4697bc6cb171a33e63ac665842b73d63000a2d215ca826a6432c73dcf249f",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "ui_element_splicing",
+    "transformation_parameters": {
+      "transformation": "ui_element_splicing",
+      "source_crop": [
+        80,
+        60,
+        160,
+        60
+      ],
+      "destination_pos": [
+        560,
+        480
+      ],
+      "spliced_element": "official_badge",
+      "variation_seed": 23
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:43.376185+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  },
+  {
+    "generated_image_id": "manip_base_chat_proof_ui_region_compositing_v24_085c2284_1791035863_24.png",
+    "generated_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\trusttrace_screenshot_manipulation\\manip_base_chat_proof_ui_region_compositing_v24_085c2284_1791035863_24.png",
+    "generated_image_sha256": "0dc9862d1519deb95820f8bae4ddd504720f1b051df4a7c92100558328a8b9ab",
+    "source_image_id": "base_chat_proof.png",
+    "source_image_path": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\raw_sources\\temp_bases\\base_chat_proof.png",
+    "source_image_sha256": "085c22841f357ce504221565d41d4a7ff31ef281bbc89a565a65c80f22e69bc3",
+    "target_class": "SCREENSHOT-MANIPULATED",
+    "transformation_type": "ui_region_compositing",
+    "transformation_parameters": {
+      "transformation": "ui_region_compositing",
+      "bounding_box": [
+        75,
+        733,
+        600,
+        333
+      ],
+      "composited_elements": [
+        "status_header",
+        "reference_number",
+        "auth_code"
+      ],
+      "reference_number": "TR-992091",
+      "auth_code": "808-652-947",
+      "variation_seed": 24
+    },
+    "generation_timestamp_utc": "2026-10-03T13:57:43.404318+00:00",
+    "provenance_tag": "SYNTHETIC_FORENSIC_TAMPERING_CONTROLLED",
+    "disclaimer": "This sample was synthetically generated under controlled forensic testing protocols and must not be conflated with organic captures."
+  }
+]

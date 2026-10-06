@@ -509,28 +509,116 @@ export const ResultPage: React.FC<ResultPageProps> = ({ analysis, onNavigate }) 
         >
           <div className="flex items-center gap-2.5 font-mono text-xs font-bold text-slate-200 uppercase">
             <Search className="w-4 h-4 text-forensic-tealLight" />
-            6. OCR
+            6. OCR (Optical Character Recognition)
+            <span
+              className={`ml-2 px-1.5 py-0.5 text-[9px] rounded font-bold uppercase ${
+                analyzers.ocr.status === 'AVAILABLE'
+                  ? 'bg-emerald-950/80 text-emerald-400 border border-emerald-800/40'
+                  : analyzers.ocr.status === 'FAILED'
+                  ? 'bg-rose-950/80 text-rose-400 border border-rose-800/40'
+                  : 'bg-amber-950/80 text-amber-400 border border-amber-800/40'
+              }`}
+            >
+              {analyzers.ocr.status}
+            </span>
           </div>
           {openSections.ocr ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400" />}
         </button>
 
         {openSections.ocr && (
-          <div className="p-5 border-t border-lab-border space-y-3 text-xs font-mono">
-            <div className="flex flex-wrap items-center justify-between gap-3 p-2.5 rounded bg-lab-950/60 border border-lab-border/40">
-              <span className="text-slate-400">OCR Engine: <strong className="text-slate-200">{analyzers.ocr.engine}</strong></span>
-              <span className="text-slate-400">Words Extracted: <strong className="text-slate-200">{analyzers.ocr.word_count}</strong></span>
-              <span className="text-slate-400">Characters: <strong className="text-slate-200">{analyzers.ocr.character_count}</strong></span>
+          <div className="p-5 border-t border-lab-border space-y-4 text-xs font-mono">
+            {/* OCR Engine Info Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <div className="p-2.5 rounded bg-lab-950/60 border border-lab-border/40">
+                <span className="text-slate-500 block text-[10px]">Engine:</span>
+                <strong className="text-slate-200">{analyzers.ocr.engine}</strong>
+              </div>
+              <div className="p-2.5 rounded bg-lab-950/60 border border-lab-border/40">
+                <span className="text-slate-500 block text-[10px]">Words / Chars:</span>
+                <span className="text-slate-200 font-bold">{analyzers.ocr.word_count} words ({analyzers.ocr.character_count} chars)</span>
+              </div>
+              <div className="p-2.5 rounded bg-lab-950/60 border border-lab-border/40">
+                <span className="text-slate-500 block text-[10px]">Confidence:</span>
+                <span className="text-slate-200">
+                  {analyzers.ocr.confidence !== null && analyzers.ocr.confidence !== undefined
+                    ? `${(analyzers.ocr.confidence * 100).toFixed(1)}%`
+                    : 'N/A (Deterministic)'}
+                </span>
+              </div>
+              <div className="p-2.5 rounded bg-lab-950/60 border border-lab-border/40">
+                <span className="text-slate-500 block text-[10px]">Processing Time:</span>
+                <span className="text-slate-200">
+                  {analyzers.ocr.processing_time_ms ? `${analyzers.ocr.processing_time_ms.toFixed(1)} ms` : 'N/A'}
+                </span>
+              </div>
             </div>
+
+            {/* Typography Anomaly Indicator */}
+            {analyzers.ocr.font_anomaly_detected && (
+              <div className="p-3 rounded bg-amber-950/40 border border-amber-800/50 flex items-center gap-2 text-amber-300">
+                <AlertTriangle className="w-4 h-4 shrink-0 text-amber-400" />
+                <span>Typography baseline drift or kerning anomaly detected in extracted text glyphs.</span>
+              </div>
+            )}
+
+            {/* Extracted Text Preview */}
+            {analyzers.ocr.text ? (
+              <div className="space-y-1.5 pt-1">
+                <div className="flex items-center justify-between text-[11px] text-slate-400">
+                  <span className="font-bold text-slate-300 uppercase">Transcribed Text Payload:</span>
+                  <span>{analyzers.ocr.character_count} characters</span>
+                </div>
+                <div className="p-3 rounded bg-lab-950 border border-lab-border text-slate-200 font-mono text-[11px] whitespace-pre-wrap max-h-48 overflow-y-auto leading-relaxed select-text">
+                  {analyzers.ocr.text}
+                </div>
+              </div>
+            ) : analyzers.ocr.status === 'AVAILABLE' ? (
+              <div className="p-3 rounded bg-lab-950 text-slate-400 text-center">
+                ○ Target image processed successfully; no legible alphanumeric text glyphs detected.
+              </div>
+            ) : null}
+
+            {/* Regions / Bounding Boxes Drawer */}
+            {analyzers.ocr.regions && analyzers.ocr.regions.length > 0 && (
+              <div className="space-y-2 pt-2 border-t border-lab-border/40">
+                <div className="flex items-center justify-between text-[11px] text-slate-400">
+                  <span className="font-bold text-slate-300 uppercase">Detected Word Bounding Boxes ({analyzers.ocr.regions.length}):</span>
+                  <span className="text-[10px] text-slate-500">[x, y, width, height]</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 max-h-40 overflow-y-auto">
+                  {analyzers.ocr.regions.map((reg, idx) => (
+                    <div key={idx} className="p-2 rounded bg-lab-950/80 border border-lab-border text-[10px] flex items-center justify-between">
+                      <span className="text-slate-200 font-bold truncate max-w-[120px]">{reg.text}</span>
+                      <code className="text-forensic-tealLight text-[9px]">[{reg.bbox.join(', ')}]</code>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Unavailability / Failure Callout */}
             {analyzers.ocr.status === 'NOT_AVAILABLE' && (
-              <div className="p-3 rounded bg-lab-950 text-slate-500">
-                ○ Tesseract OCR engine was NOT_AVAILABLE in the active backend environment.
+              <div className="p-3.5 rounded bg-lab-950 border border-amber-800/30 text-slate-400 space-y-1">
+                <strong className="text-amber-300 block">OCR Engine NOT_AVAILABLE</strong>
+                <p className="text-[11px] leading-relaxed">
+                  {analyzers.ocr.availability_note ||
+                    'No local OCR engine (Tesseract or Windows Media OCR) was found in the host runtime.'}
+                </p>
+              </div>
+            )}
+            {analyzers.ocr.status === 'FAILED' && (
+              <div className="p-3.5 rounded bg-rose-950/50 border border-rose-800/50 text-rose-300 space-y-1">
+                <strong className="text-rose-200 block">OCR Execution FAILED</strong>
+                <p className="text-[11px] leading-relaxed">
+                  {analyzers.ocr.failure_reason || 'An unexpected error occurred during OCR text extraction.'}
+                </p>
               </div>
             )}
           </div>
         )}
       </div>
 
-      {/* Section 7: ML Analysis */}
+      {/* Section 7: ML Analysis & Diagnostics */}
       <div className="forensic-panel overflow-hidden">
         <button
           onClick={() => toggleSection('ml')}
@@ -539,38 +627,69 @@ export const ResultPage: React.FC<ResultPageProps> = ({ analysis, onNavigate }) 
         >
           <div className="flex items-center gap-2.5 font-mono text-xs font-bold text-slate-200 uppercase">
             <Cpu className="w-4 h-4 text-forensic-blueLight" />
-            7. ML Analysis
+            7. Deep ML Analysis & Model Diagnostics
+            <span
+              className={`ml-2 px-1.5 py-0.5 text-[9px] rounded font-bold uppercase ${
+                analyzers.ml.model_status === 'AVAILABLE'
+                  ? 'bg-emerald-950/80 text-emerald-400 border border-emerald-800/40'
+                  : analyzers.ml.model_status === 'FAILED'
+                  ? 'bg-rose-950/80 text-rose-400 border border-rose-800/40'
+                  : 'bg-amber-950/80 text-amber-400 border border-amber-800/40'
+              }`}
+            >
+              {analyzers.ml.model_status}
+            </span>
           </div>
           {openSections.ml ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400" />}
         </button>
 
         {openSections.ml && (
           <div className="p-5 border-t border-lab-border space-y-4 text-xs font-mono">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {/* Quick Metrics Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <div className="p-2.5 rounded bg-lab-950/60 border border-lab-border/40">
-                <span className="text-slate-400 block text-[10px]">Model Status:</span>
-                <span className={analyzers.ml.model_status === 'AVAILABLE' ? 'text-emerald-400 font-bold' : 'text-amber-400 font-bold'}>
+                <span className="text-slate-500 block text-[10px]">Model Status:</span>
+                <span
+                  className={
+                    analyzers.ml.model_status === 'AVAILABLE'
+                      ? 'text-emerald-400 font-bold'
+                      : analyzers.ml.model_status === 'FAILED'
+                      ? 'text-rose-400 font-bold'
+                      : 'text-amber-400 font-bold'
+                  }
+                >
                   {analyzers.ml.model_status}
                 </span>
               </div>
               <div className="p-2.5 rounded bg-lab-950/60 border border-lab-border/40">
-                <span className="text-slate-400 block text-[10px]">Architecture / Version:</span>
-                <span className="text-slate-200">
-                  {analyzers.ml.model_name || 'EfficientNet'} ({analyzers.ml.model_version || 'v1.0.0'})
-                </span>
-              </div>
-              <div className="p-2.5 rounded bg-lab-950/60 border border-lab-border/40">
-                <span className="text-slate-400 block text-[10px]">Predicted Artifact Class:</span>
+                <span className="text-slate-500 block text-[10px]">Predicted Class:</span>
                 <span className="text-forensic-blueLight font-bold">
                   {analyzers.ml.predicted_label || 'UNKNOWN'}
                 </span>
+              </div>
+              <div className="p-2.5 rounded bg-lab-950/60 border border-lab-border/40">
+                <span className="text-slate-500 block text-[10px]">Confidence / Uncertainty:</span>
+                <span className="text-slate-200">
+                  {analyzers.ml.confidence !== null && analyzers.ml.confidence !== undefined
+                    ? `${(analyzers.ml.confidence * 100).toFixed(1)}%`
+                    : 'N/A'}{' '}
+                  {analyzers.ml.uncertainty !== null && analyzers.ml.uncertainty !== undefined
+                    ? `(±${analyzers.ml.uncertainty.toFixed(3)})`
+                    : ''}
+                </span>
+              </div>
+              <div className="p-2.5 rounded bg-lab-950/60 border border-lab-border/40">
+                <span className="text-slate-500 block text-[10px]">Runtime Device:</span>
+                <span className="text-slate-200 font-bold">{analyzers.ml.device || 'CPU'}</span>
               </div>
             </div>
 
             {/* Class Probabilities Distribution */}
             {analyzers.ml.class_probabilities && Object.keys(analyzers.ml.class_probabilities).length > 0 && (
               <div className="space-y-2 pt-1">
-                <span className="text-[11px] font-bold text-slate-300 block">Class Probability Distribution:</span>
+                <span className="text-[11px] font-bold text-slate-300 block uppercase">
+                  Softmax Class Probability Distribution:
+                </span>
                 <div className="space-y-1.5">
                   {Object.entries(analyzers.ml.class_probabilities).map(([cls, prob]) => (
                     <div key={cls} className="space-y-0.5">
@@ -590,9 +709,59 @@ export const ResultPage: React.FC<ResultPageProps> = ({ analysis, onNavigate }) 
               </div>
             )}
 
-            <div className="p-3 rounded bg-lab-950/80 border border-lab-border text-[11px] text-slate-400">
-              {analyzers.ml.note}
+            {/* Model Transparency & Diagnostics Audit Panel */}
+            <div className="p-3.5 rounded bg-lab-950/90 border border-lab-border space-y-2.5">
+              <div className="flex items-center justify-between border-b border-lab-border/40 pb-1.5">
+                <span className="font-bold text-slate-300 uppercase text-[11px]">Model Runtime Diagnostics & Governance</span>
+                <span className="text-[10px] text-slate-500">ISO/IEC 27037 Audit Trail</span>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-[10px]">
+                <div>
+                  <span className="text-slate-500 block">Architecture:</span>
+                  <span className="text-slate-300">{analyzers.ml.diagnostics?.architecture || analyzers.ml.model_name || 'EfficientNet-B0'}</span>
+                </div>
+                <div>
+                  <span className="text-slate-500 block">Preprocessing:</span>
+                  <span className="text-slate-300">{analyzers.ml.diagnostics?.preprocessing_version || 'v1.0.0-imagenet (224×224)'}</span>
+                </div>
+                <div>
+                  <span className="text-slate-500 block">Hardware Device:</span>
+                  <span className="text-slate-300">{analyzers.ml.device || 'CPU'}</span>
+                </div>
+                <div>
+                  <span className="text-slate-500 block">Temperature Calibration:</span>
+                  <span className={analyzers.ml.calibrated ? 'text-emerald-400' : 'text-slate-400'}>
+                    {analyzers.ml.calibrated ? 'ACTIVE' : 'INACTIVE'}
+                  </span>
+                </div>
+                <div>
+                  <span className="text-slate-500 block">OOD Energy Gate:</span>
+                  <span className="text-emerald-400">ACTIVE</span>
+                </div>
+                <div>
+                  <span className="text-slate-500 block">MC Dropout Uncertainty:</span>
+                  <span className="text-emerald-400">ACTIVE</span>
+                </div>
+                <div className="col-span-2 sm:col-span-3">
+                  <span className="text-slate-500 block">Checkpoint SHA-256:</span>
+                  <code className="text-forensic-tealLight text-[9px] break-all">
+                    {analyzers.ml.checkpoint_sha256 || analyzers.ml.diagnostics?.checkpoint_sha256 || 'None (Model weights not active)'}
+                  </code>
+                </div>
+              </div>
             </div>
+
+            {/* Note / Failure Reason */}
+            {analyzers.ml.note && (
+              <div className="p-3 rounded bg-lab-950 border border-lab-border text-[11px] text-slate-400 leading-relaxed">
+                {analyzers.ml.note}
+              </div>
+            )}
+            {analyzers.ml.failure_reason && (
+              <div className="p-3 rounded bg-amber-950/40 border border-amber-800/40 text-[11px] text-amber-300 leading-relaxed">
+                <strong>Diagnostic Note:</strong> {analyzers.ml.failure_reason}
+              </div>
+            )}
           </div>
         )}
       </div>

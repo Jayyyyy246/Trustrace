@@ -1,0 +1,72 @@
+{
+  "experiment_name": "stfd_5class_manipulation_classification",
+  "phase": "PHASE_1_MANIPULATION_CLASSIFIER_BASELINE",
+  "random_seed": 42,
+  "dataset": {
+    "name": "Smartphone Tampering Forensic Dataset (STFD - ICASSP 2023)",
+    "isolation_method": "PHASH_LE4_CONNECTED_COMPONENTS",
+    "train_manifest": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\manifests\\trusttrace_stfd_clustered_train.csv",
+    "val_manifest": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\manifests\\trusttrace_stfd_clustered_val.csv",
+    "test_manifest": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\manifests\\trusttrace_stfd_clustered_test.csv",
+    "samples": {
+      "train": 2752,
+      "val": 590,
+      "test": 590,
+      "total": 3932
+    },
+    "classes": [
+      "COPY_MOVE",
+      "SPLICING",
+      "REMOVAL",
+      "INSERTION",
+      "REPLACEMENT"
+    ],
+    "num_classes": 5
+  },
+  "model": {
+    "backbone": "mobilenet_v3_small",
+    "pretrained": true,
+    "pretrained_weights": "MobileNet_V3_Small_Weights.DEFAULT",
+    "feature_dim": 256,
+    "dropout_rate": 0.3,
+    "projection_head": "Flatten -> Dropout(0.3) -> Linear(576, 256) -> BatchNorm1d(256) -> SiLU -> Linear(256, 5)"
+  },
+  "hyperparameters": {
+    "image_size": [
+      224,
+      224
+    ],
+    "batch_size": 32,
+    "epochs": 6,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR (T_max=6, eta_min=1e-6)",
+    "loss_function": "CrossEntropyLoss with Inverse Class Frequency Weighting",
+    "gradient_clipping_max_norm": 5.0,
+    "model_selection_metric": "Validation Macro-F1"
+  },
+  "preprocessing": {
+    "train": [
+      "Resize((224, 224))",
+      "ColorJitter(brightness=0.05, contrast=0.05)",
+      "ToTensor()",
+      "Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])"
+    ],
+    "val_and_test": [
+      "Resize((224, 224))",
+      "ToTensor()",
+      "Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])"
+    ]
+  },
+  "software_environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.14.7",
+    "torch_version": "2.14.1+cpu",
+    "torchvision_version": "0.29.1+cpu",
+    "scikit_learn_version": "1.9.0",
+    "numpy_version": "2.5.3",
+    "pillow_version": "12.3.0",
+    "cuda_available": false
+  }
+}

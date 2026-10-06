@@ -73,6 +73,7 @@ class ImageAnalysisService:
             ela_mean_delta=ela_data.get("mean_delta"),
             ela_variance=ela_data.get("variance"),
             estimated_jpeg_quality=m.get("estimated_jpeg_quality"),
+            noise_residual=m.get("noise_residual"),
         )
         return result, base_res.findings
 

@@ -65,15 +65,28 @@ class ImageAnalyzerResult(BaseModel):
     ela_mean_delta: Optional[float] = None
     ela_variance: Optional[float] = None
     estimated_jpeg_quality: Optional[int] = None
+    noise_residual: Optional[Dict[str, Any]] = None
+
+
+class OCRRegion(BaseModel):
+    text: str
+    bbox: List[int] = Field(description="Bounding box coordinates [x, y, width, height]")
+    confidence: Optional[float] = Field(default=None, description="Detection confidence in [0, 1] if reported by engine")
 
 
 class OCRAnalyzerResult(BaseModel):
-    status: AnalyzerStatus
+    status: AnalyzerStatus = AnalyzerStatus.NOT_AVAILABLE
     engine: str = "Tesseract"
     text: Optional[str] = None
+    confidence: Optional[float] = None
+    regions: List[OCRRegion] = Field(default_factory=list)
+    language: Optional[str] = None
+    processing_time_ms: Optional[float] = None
     word_count: int = 0
     character_count: int = 0
     availability_note: Optional[str] = None
+    failure_reason: Optional[str] = None
+    font_anomaly_detected: bool = False
 
 
 class ScreenshotAnalyzerResult(BaseModel):
@@ -82,12 +95,33 @@ class ScreenshotAnalyzerResult(BaseModel):
     matched_viewport: Optional[str] = None
     aspect_ratio_standard: bool = False
     indicators: List[str] = Field(default_factory=list)
+    ui_rectangles_detected: Optional[int] = None
+    repeated_alignments_count: Optional[int] = None
+    text_density_ratio: Optional[float] = None
+
+
+class ModelDiagnostics(BaseModel):
+    name: Optional[str] = None
+    version: Optional[str] = None
+    checkpoint_path: Optional[str] = None
+    checkpoint_sha256: Optional[str] = None
+    architecture: Optional[str] = None
+    device: str = "CPU"
+    inference_time_ms: Optional[float] = None
+    preprocessing_version: str = "v1.0.0-imagenet"
+    calibration_active: bool = False
+    ood_active: bool = False
+    mc_dropout_active: bool = False
 
 
 class MLAnalyzerResult(BaseModel):
+    status: str = Field(
+        default="NOT_AVAILABLE",
+        description="Explicit status indicator: AVAILABLE, NOT_AVAILABLE, or FAILED."
+    )
     model_status: str = Field(
         default="NOT_AVAILABLE",
-        description="Explicit status indicator. Must be NOT_AVAILABLE when model is not active."
+        description="Explicit status indicator: AVAILABLE, NOT_AVAILABLE, or FAILED."
     )
     model_name: Optional[str] = None
     model_version: Optional[str] = None
@@ -98,9 +132,16 @@ class MLAnalyzerResult(BaseModel):
         default=None,
         description="Quantified uncertainty score in [0, 1] derived from entropy and OOD energy logic."
     )
+    ood_detected: Optional[bool] = None
+    calibrated: bool = False
+    device: Optional[str] = None
+    inference_time_ms: Optional[float] = None
+    checkpoint_sha256: Optional[str] = None
+    failure_reason: Optional[str] = None
     note: str = Field(
-        default="Machine learning model weights not loaded in Phase 1 runtime. Skipping ML inference."
+        default="Deep learning model weights not loaded in Phase 1 runtime. Skipping ML inference."
     )
+    diagnostics: Optional[ModelDiagnostics] = None
 
 
 class AnalyzersContainer(BaseModel):

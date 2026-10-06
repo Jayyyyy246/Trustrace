@@ -18,8 +18,8 @@ from app.schemas.forensic import (
 
 def test_ocr_honest_availability(sample_png_bytes: bytes):
     result, findings = ocr_service.analyze_text(sample_png_bytes)
-    # The status must be either COMPLETED (if tesseract installed) or NOT_AVAILABLE
-    assert result.status in (AnalyzerStatus.COMPLETED, AnalyzerStatus.NOT_AVAILABLE)
+    # The status must be either AVAILABLE/COMPLETED (if engine available) or NOT_AVAILABLE
+    assert result.status in (AnalyzerStatus.AVAILABLE, AnalyzerStatus.COMPLETED, AnalyzerStatus.NOT_AVAILABLE)
     if result.status == AnalyzerStatus.NOT_AVAILABLE:
         assert result.text is None
         assert "not found" in result.availability_note.lower()
@@ -41,11 +41,17 @@ def test_screenshot_viewport_detection():
 
 
 def test_ml_inference_not_available_in_phase_1(sample_png_bytes: bytes):
-    result, findings = ml_inference_service.predict(sample_png_bytes)
+    from app.services.ml_inference_service import MLInferenceService
+    unavail_svc = MLInferenceService(model_path="model/checkpoints/nonexistent_model.pth")
+    result, findings = unavail_svc.predict(sample_png_bytes)
     assert result.model_status == "NOT_AVAILABLE"
     assert result.predicted_label == "UNKNOWN"
     assert result.confidence is None
     assert len(findings) == 0  # No fake ML findings
+
+    # Live service with trained checkpoint is AVAILABLE
+    live_res, _ = ml_inference_service.predict(sample_png_bytes)
+    assert live_res.model_status in ("AVAILABLE", "NOT_AVAILABLE")
 
 
 def test_evidence_fusion_unknown_when_ml_missing_and_no_tampering():

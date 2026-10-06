@@ -47,6 +47,10 @@ data/quarantine/*
 data/reports/*
 !data/reports/.gitkeep
 
+# Dataset images (do not commit large external raw assets)
+data/dataset/**
+!data/dataset/**/.gitkeep
+
 # IDE & OS Files
 .DS_Store
 Thumbs.db
@@ -55,3 +59,4 @@ Thumbs.db
 *.swp
 *.swo
 *.log
+scratch/

@@ -62,6 +62,8 @@ class EvidenceFusionService:
                     "detected": any(f.category == "CLONE" or "COPYMOVE" in f.finding_id for f in findings),
                     "clusters": 1 if any(f.category == "CLONE" or "COPYMOVE" in f.finding_id for f in findings) else 0,
                 },
+                "estimated_jpeg_quality": image_res.estimated_jpeg_quality,
+                "noise_residual": image_res.noise_residual,
             },
             limitations=[],
         )
@@ -73,6 +75,9 @@ class EvidenceFusionService:
                 "is_probable_screenshot": screenshot_res.is_common_viewport or screenshot_res.aspect_ratio_standard,
                 "matched_viewport": screenshot_res.matched_viewport,
                 "aspect_ratio_standard": screenshot_res.aspect_ratio_standard,
+                "ui_rectangles_detected": screenshot_res.ui_rectangles_detected,
+                "repeated_alignments_count": screenshot_res.repeated_alignments_count,
+                "text_density_ratio": screenshot_res.text_density_ratio,
             },
             limitations=[],
         )
@@ -83,6 +88,7 @@ class EvidenceFusionService:
             metrics={
                 "word_count": ocr_res.word_count,
                 "character_count": ocr_res.character_count,
+                "font_anomaly_detected": ocr_res.font_anomaly_detected,
             },
             limitations=[ocr_res.availability_note] if ocr_res.availability_note else [],
         )

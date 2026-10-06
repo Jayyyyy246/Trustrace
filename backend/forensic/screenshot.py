@@ -38,11 +38,29 @@ COMMON_SCREENSHOT_RESOLUTIONS = [
     (2560, 1440, "Desktop QHD (16:9)"),
     (3840, 2160, "Desktop 4K UHD (16:9)"),
     (2560, 1600, "MacBook Retina (16:10)"),
+    (3024, 1964, "MacBook Pro 14 (15.4:10)"),
 ]
 
 
 class ForensicScreenshotAnalyzer:
     """Measurable UI structure, layout, and display viewport analyzer."""
+
+    @staticmethod
+    def _is_standard_aspect_ratio(aspect_ratio: float) -> bool:
+        """Checks if aspect ratio approximates standard display ratios (within 1.5% tolerance)."""
+        standard_ratios = [
+            16 / 9,      # 1.777
+            9 / 16,      # 0.5625
+            19.5 / 9,    # 2.166
+            9 / 19.5,    # 0.4615
+            20 / 9,      # 2.222
+            9 / 20,      # 0.450
+            16 / 10,     # 1.60
+            10 / 16,     # 0.625
+            4 / 3,       # 1.333
+            3 / 4,       # 0.75
+        ]
+        return any(abs(aspect_ratio - target) / target < 0.015 for target in standard_ratios)
 
     def _match_viewport(self, width: int, height: int) -> Optional[str]:
         # 1. Exact orientation match
@@ -151,6 +169,7 @@ class ForensicScreenshotAnalyzer:
             metrics = {
                 "dimensions": {"width": width, "height": height},
                 "aspect_ratio": aspect_ratio,
+                "aspect_ratio_standard": self._is_standard_aspect_ratio(aspect_ratio),
                 "matched_viewport": viewport_match,
                 "ui_rectangles_detected": ui_count,
                 "repeated_alignments_count": repeated_aligns,

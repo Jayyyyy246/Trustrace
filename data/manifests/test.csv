@@ -1,0 +1,13 @@
+image_id,sha256,source_dataset,source_id,original_path,target_class,width,height,format,file_size,split
+img_000001,1514ea214731b6bfb751d3ad4cb8675999906375e4497523100819e9977288c6,,img_000001.png,C:\Users\jay\New folder (2)\Trustrace\data\dataset\REAL\img_000001.png,REAL,384,256,PNG,117926,test
+img_000004,71b6fc0dd30c0f0a668e75230426130f3bc8de8d3a081539e86437faeab6e76f,,img_000004.png,C:\Users\jay\New folder (2)\Trustrace\data\dataset\REAL\img_000004.png,REAL,384,256,PNG,165662,test
+img_000021,802f4018f7dea3c00e14170ac8a4c0f41c0d10f201f664fbe3884fcc2f43236f,,img_000021.png,C:\Users\jay\New folder (2)\Trustrace\data\dataset\REAL\img_000021.png,REAL,384,256,PNG,164688,test
+img_000025,5c7f10870692f7f1aa78707504a4882f13be050e6c79a9c834aee1c6420b4b4b,,img_000026.png,C:\Users\jay\New folder (2)\Trustrace\data\dataset\EDITED\img_000025.png,EDITED,384,256,PNG,196457,test
+img_000033,1a2cfb2cbc452ae9c77ab0b8eb281c834348e61329caef2ad9a8476e435a99cd,,img_000034.png,C:\Users\jay\New folder (2)\Trustrace\data\dataset\EDITED\img_000033.png,EDITED,640,480,PNG,493846,test
+img_000043,6c6b26b099ead09ac2d01af6d54ac110eea19e68b885bed76def8eb6f1e354da,,img_000044.png,C:\Users\jay\New folder (2)\Trustrace\data\dataset\EDITED\img_000043.png,EDITED,640,480,PNG,437465,test
+img_000051,dd9d095af14e9c5621a6c267071d53687cc74ae8c9a72b7899f14dd732c0cb4b,,img_000053.jpg,C:\Users\jay\New folder (2)\Trustrace\data\dataset\AI-GENERATED\img_000051.jpg,AI-GENERATED,32,32,JPEG,916,test
+img_000061,a0ce19834cb615373730d3b1a867dd2f6787e1085f9cf551f96dd526147737a0,,img_000063.jpg,C:\Users\jay\New folder (2)\Trustrace\data\dataset\AI-GENERATED\img_000061.jpg,AI-GENERATED,32,32,JPEG,769,test
+img_000066,8da9a5e71732be38094d04d8a0a7f5eef7b013a0bd917e6f8712a07eb2641228,,img_000068.jpg,C:\Users\jay\New folder (2)\Trustrace\data\dataset\AI-GENERATED\img_000066.jpg,AI-GENERATED,32,32,JPEG,1020,test
+img_000079,ccbfd2f06fad5b2de2c345a7a69b3ac46d19fd48bc7bcd7889e794ee7d629002,,manip_base_chat_proof_ui_region_compositing_v19_085c2284_1791035863_19.png,C:\Users\jay\New folder (2)\Trustrace\data\dataset\SCREENSHOT-MANIPULATED\img_000079.png,SCREENSHOT-MANIPULATED,750,1334,PNG,14181,test
+img_000081,28b78dd9665f62729dfc70e323f7712e4d03331109b14f2881fe8a2b08e8d17d,,manip_base_chat_proof_ui_region_compositing_v4_085c2284_1791035862_4.png,C:\Users\jay\New folder (2)\Trustrace\data\dataset\SCREENSHOT-MANIPULATED\img_000081.png,SCREENSHOT-MANIPULATED,750,1334,PNG,14334,test
+img_000094,32922f2b706aeeebf7c64ec20ea254920a99245a0c3c6e018e5c03c77e5f5098,,manip_test_payment_proof_numeric_alteration_v10_a5ed3d20_1791035862_10.png,C:\Users\jay\New folder (2)\Trustrace\data\dataset\SCREENSHOT-MANIPULATED\img_000094.png,SCREENSHOT-MANIPULATED,1170,2532,PNG,20684,test

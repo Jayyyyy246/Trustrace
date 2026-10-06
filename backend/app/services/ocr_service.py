@@ -2,98 +2,132 @@
 Optical Character Recognition (OCR) and text verification service.
 Evaluates local OCR availability honestly without fabricating extracted text.
 """
-import io
-import shutil
 from typing import Tuple, List, Optional
-from PIL import Image
-
 from app.schemas.common import AnalyzerStatus, FindingSeverity
-from app.schemas.forensic import OCRAnalyzerResult, FindingItem
+from app.schemas.forensic import OCRAnalyzerResult, OCRRegion, FindingItem
+from forensic.ocr import ocr_analyzer
 
 
 class OCRService:
-    def __init__(self):
-        self._tesseract_available: Optional[bool] = None
-
     def is_engine_available(self) -> bool:
-        """Checks if local Tesseract executable exists on the host system."""
-        if self._tesseract_available is None:
-            # Check PATH or common installation locations
-            binary = shutil.which("tesseract")
-            if binary:
-                self._tesseract_available = True
-            else:
-                # Common Windows install path fallback
-                win_path = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-                if shutil.which(win_path):
-                    self._tesseract_available = True
-                else:
-                    self._tesseract_available = False
-        return self._tesseract_available
+        """Checks if any supported OCR engine (Tesseract or Windows Media OCR) is available."""
+        return ocr_analyzer.is_available()
+
+    def get_engine_name(self) -> str:
+        """Returns the active OCR engine name."""
+        return ocr_analyzer.get_engine_name()
 
     def analyze_text(self, data: bytes) -> Tuple[OCRAnalyzerResult, List[FindingItem]]:
         """
-        Executes OCR extraction if a local engine is installed.
-        Explicitly marks as NOT_AVAILABLE if the binary is absent.
+        Executes OCR extraction and typography analysis via canonical ForensicOCRAnalyzer.
+        Differentiates AVAILABLE, NOT_AVAILABLE, and FAILED states.
         """
-        findings: List[FindingItem] = []
+        base_res = ocr_analyzer.analyze(data)
 
-        if not self.is_engine_available():
+        if base_res.status == "not_available":
+            avail_note = (
+                base_res.limitations[-1]
+                if base_res.limitations
+                else "No operational OCR engine found on the host system. Text extraction unavailable."
+            )
             result = OCRAnalyzerResult(
                 status=AnalyzerStatus.NOT_AVAILABLE,
-                engine="Tesseract (Offline)",
+                engine=base_res.metrics.get("engine", "None (Offline)"),
                 text=None,
+                confidence=None,
+                regions=[],
+                language=None,
+                processing_time_ms=None,
                 word_count=0,
                 character_count=0,
-                availability_note="Local Tesseract OCR engine binary not found in system PATH. Text extraction unavailable.",
+                availability_note=avail_note,
+                failure_reason=None,
+                font_anomaly_detected=False,
             )
-            return result, findings
+            return result, base_res.findings
 
-        # If available, execute pytesseract
-        try:
-            import pytesseract
-            with Image.open(io.BytesIO(data)) as img:
-                extracted = pytesseract.image_to_string(img)
-                clean_text = extracted.strip()
-                words = clean_text.split()
-                word_count = len(words)
-                char_count = len(clean_text)
-
-                if word_count > 0:
-                    findings.append(
-                        FindingItem(
-                            finding_id="FIND-OCR-001",
-                            analyzer="OCRAnalyzer",
-                            title="Embedded Text Glyphs Detected",
-                            description=f"OCR extracted {word_count} words across the evidence image.",
-                            severity=FindingSeverity.INFO,
-                            confidence=0.85,
-                            technical_details={"word_count": word_count, "char_count": char_count},
-                            is_anomaly=False,
-                        )
-                    )
-
-                result = OCRAnalyzerResult(
-                    status=AnalyzerStatus.COMPLETED,
-                    engine="Tesseract (Local)",
-                    text=clean_text if word_count > 0 else None,
-                    word_count=word_count,
-                    character_count=char_count,
-                    availability_note=None,
-                )
-                return result, findings
-        except Exception as e:
+        if base_res.status == "failed":
+            err = base_res.metrics.get("error", "OCR execution failed")
             return (
                 OCRAnalyzerResult(
                     status=AnalyzerStatus.FAILED,
-                    engine="Tesseract",
+                    engine=base_res.metrics.get("engine", "OCR Engine"),
                     text=None,
+                    confidence=None,
+                    regions=[],
+                    language=None,
+                    processing_time_ms=None,
                     word_count=0,
                     character_count=0,
-                    availability_note=f"OCR execution failed: {str(e)}",
+                    availability_note=None,
+                    failure_reason=err,
+                    font_anomaly_detected=False,
                 ),
-                findings,
+                base_res.findings,
             )
+
+        m = base_res.metrics
+        word_count = m.get("word_count", 0)
+        char_count = m.get("character_count", 0)
+        text = m.get("extracted_text", "")
+        font_anomaly = m.get("font_anomaly_detected", False)
+        avg_conf = m.get("average_confidence")
+        engine_name = m.get("engine", "OCR Engine")
+        lang = m.get("language")
+        proc_time = m.get("processing_time_ms")
+
+        # Map raw regions to OCRRegion schema
+        regions: List[OCRRegion] = []
+        for r in m.get("regions", []):
+            if "text" in r and "bbox" in r:
+                regions.append(OCRRegion(
+                    text=str(r["text"]),
+                    bbox=list(r["bbox"]),
+                    confidence=r.get("confidence")
+                ))
+
+        # Map findings for schema compatibility
+        findings: List[FindingItem] = []
+        for f in base_res.findings:
+            if f.finding_id == "FIND-OCR-TEXT":
+                findings.append(
+                    FindingItem(
+                        finding_id="FIND-OCR-001",
+                        analyzer="OCRAnalyzer",
+                        category="OCR",
+                        title=f"Embedded Text Glyphs Detected ({engine_name})",
+                        description=f"OCR extracted {word_count} words across the evidence image.",
+                        severity=FindingSeverity.INFO,
+                        confidence=avg_conf if avg_conf is not None else 0.85,
+                        technical_details={
+                            "word_count": word_count,
+                            "char_count": char_count,
+                            "engine": engine_name,
+                            "language": lang,
+                            "processing_time_ms": proc_time,
+                        },
+                        is_anomaly=False,
+                    )
+                )
+            else:
+                findings.append(f)
+
+        result = OCRAnalyzerResult(
+            status=AnalyzerStatus.AVAILABLE,
+            engine=engine_name,
+            text=text if text else "",
+            confidence=avg_conf,
+            regions=regions,
+            language=lang,
+            processing_time_ms=proc_time,
+            word_count=word_count,
+            character_count=char_count,
+            availability_note=None,
+            failure_reason=None,
+            font_anomaly_detected=font_anomaly,
+        )
+        return result, findings
 
 
 ocr_service = OCRService()
+

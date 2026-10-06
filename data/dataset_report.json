@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2026-10-03T13:57:44.540165+00:00",
+  "total_images": 96,
+  "classes": {
+    "REAL": 24,
+    "EDITED": 24,
+    "AI-GENERATED": 24,
+    "SCREENSHOT-MANIPULATED": 24
+  },
+  "splits": {
+    "train": 68,
+    "validation": 16,
+    "test": 12
+  },
+  "duplicates": {
+    "exact": 1,
+    "near_duplicates": 66
+  },
+  "rejected": 1,
+  "unmapped": 0,
+  "sources": [
+    null
+  ],
+  "warnings": []
+}

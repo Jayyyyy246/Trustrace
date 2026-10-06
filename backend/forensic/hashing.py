@@ -28,6 +28,10 @@ class ForensicHashingAnalyzer:
         """Computes NIST FIPS 180-4 SHA-512 digest."""
         return hashlib.sha512(data).hexdigest()
 
+    def compute_sha1(self, data: bytes) -> str:
+        """Computes SHA-1 digest."""
+        return hashlib.sha1(data).hexdigest()
+
     def compute_md5(self, data: bytes) -> str:
         """Computes legacy MD5 digest for cross-verification."""
         return hashlib.md5(data).hexdigest()

@@ -34,6 +34,10 @@ class ReportService:
     # Baseline model checksum (or active checkpoint hash)
     DEFAULT_MODEL_CHECKSUM = "SHA256:E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
 
+    def generate_summary_digest(self, analysis: AnalysisResultResponse) -> Dict[str, Any]:
+        """Alias for build_forensic_report_data."""
+        return self.build_forensic_report_data(analysis)
+
     def build_forensic_report_data(self, analysis: AnalysisResultResponse) -> Dict[str, Any]:
         """Compiles all 17 required report sections from actual backend analysis results."""
         ev = analysis.evidence
@@ -53,7 +57,10 @@ class ReportService:
         try:
             from app.services.ml_inference_service import ml_inference_service
             if ml_inference_service.is_available() and ml_inference_service._predictor and ml_inference_service._predictor.metadata:
-                chk = ml_inference_service._predictor.metadata.model_checksum
+                chk = (
+                    getattr(ml_inference_service._predictor.metadata, "sha256_checksum", None)
+                    or getattr(ml_inference_service._predictor.metadata, "model_checksum", None)
+                )
                 model_chk = f"SHA256:{chk.upper()}" if chk else self.DEFAULT_MODEL_CHECKSUM
             else:
                 model_chk = self.DEFAULT_MODEL_CHECKSUM
@@ -76,12 +83,23 @@ class ReportService:
             meta_interp = "Absence of camera metadata is typical in web and messaging platform transit; no conclusive inference of manipulation can be drawn from absence alone."
 
         # OCR
-        if ocr.status == "NOT_AVAILABLE":
-            ocr_obs = "Tesseract OCR engine was NOT_AVAILABLE in the active runtime."
+        ocr_st_str = ocr.status.value if hasattr(ocr.status, "value") else str(ocr.status)
+        if ocr_st_str in ("NOT_AVAILABLE", "not_available"):
+            ocr_obs = "OCR engine was NOT_AVAILABLE in the active runtime."
             ocr_interp = "Typography authenticity and font baseline metrics could not be computed due to engine unavailability."
+        elif ocr_st_str in ("FAILED", "failed"):
+            ocr_obs = f"OCR engine execution failed ({ocr.failure_reason or 'Execution error'})."
+            ocr_interp = "Text extraction failed during execution."
         else:
-            ocr_obs = f"Extracted {ocr.word_count} words ({ocr.character_count} characters) via {ocr.engine}."
-            ocr_interp = "No typography kerning anomalies or baseline misalignment observed." if ocr.word_count > 0 else "No legible textual elements detected in target asset."
+            time_str = f" ({ocr.processing_time_ms:.1f}ms)" if getattr(ocr, "processing_time_ms", None) else ""
+            conf_str = f", confidence {(ocr.confidence * 100):.1f}%" if getattr(ocr, "confidence", None) is not None else ""
+            ocr_obs = f"Extracted {ocr.word_count} words ({ocr.character_count} characters) via {ocr.engine}{conf_str}{time_str}."
+            if getattr(ocr, "font_anomaly_detected", False):
+                ocr_interp = "Inconsistent font baseline or typography kerning anomaly detected in rendered text."
+            elif ocr.word_count > 0:
+                ocr_interp = "No typography kerning anomalies or baseline misalignment observed."
+            else:
+                ocr_interp = "No legible textual elements detected in target asset."
 
         # Image Forensics
         ela_val = img.ela_variance or 0.0
@@ -123,7 +141,7 @@ class ReportService:
         if ml.model_status == "AVAILABLE":
             ml_conf_val = f"{(ml.confidence * 100):.1f}%" if ml.confidence is not None else "N/A"
             ml_unc_val = f"{ml.uncertainty:.4f}" if ml.uncertainty is not None else "N/A"
-            ml_obs = f"Inference engine ({ml_arch}) evaluated visual representations. Prediction: '{ml.predicted_label}' (Confidence: {ml_conf_val}, Calibrated Uncertainty: {ml_unc_val})."
+            ml_obs = f"Inference engine ({model_arch}) evaluated visual representations. Prediction: '{ml.predicted_label}' (Confidence: {ml_conf_val}, Calibrated Uncertainty: {ml_unc_val})."
             ml_interp = f"Deep learning artifact classification advisory indicator. Pattern characteristics are consistent with '{ml.predicted_label}' class distribution."
         else:
             ml_obs = "Deep learning model weights were NOT_AVAILABLE in the active runtime."
@@ -242,7 +260,10 @@ class ReportService:
                     "word_count": ocr.word_count,
                     "character_count": ocr.character_count,
                     "engine": ocr.engine,
-                    "status": ocr.status,
+                    "status": str(ocr.status.value if hasattr(ocr.status, "value") else ocr.status),
+                    "confidence": getattr(ocr, "confidence", None),
+                    "processing_time_ms": getattr(ocr, "processing_time_ms", None),
+                    "regions_count": len(ocr.regions) if getattr(ocr, "regions", None) else 0,
                 },
                 "7_image_forensic_findings": {
                     "section_number": 7,

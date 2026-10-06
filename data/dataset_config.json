@@ -1,0 +1,49 @@
+{
+  "dataset_version": "trusttrace-ds-v1.0",
+  "dataset_root": "data/dataset",
+  "classes": [
+    "REAL",
+    "EDITED",
+    "AI-GENERATED",
+    "SCREENSHOT-MANIPULATED"
+  ],
+  "unknown_handling": {
+    "strategy": "uncertainty_and_ood",
+    "confidence_threshold": 0.55,
+    "entropy_threshold": 0.82,
+    "energy_threshold": -0.50
+  },
+  "preprocessing": {
+    "image_size": [224, 224],
+    "mean": [0.485, 0.456, 0.406],
+    "std": [0.229, 0.224, 0.225],
+    "valid_extensions": [".jpg", ".jpeg", ".png", ".webp", ".bmp", ".tiff"]
+  },
+  "splits": {
+    "train_ratio": 0.70,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15,
+    "seed": 42,
+    "group_separator": "__",
+    "leak_prevention": "sha256_content_deduplication_and_source_grouping"
+  },
+  "training_hyperparameters": {
+    "architecture": "mobilenet_v3_small",
+    "supported_architectures": [
+      "efficientnet_b0",
+      "mobilenet_v3_small",
+      "convnext_tiny",
+      "custom_forensic_cnn"
+    ],
+    "batch_size": 16,
+    "epochs": 15,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "scheduler": "CosineAnnealingLR"
+  },
+  "calibration": {
+    "method": "temperature_scaling",
+    "optimization": "L-BFGS",
+    "target_metric": "expected_calibration_error"
+  }
+}

@@ -614,6 +614,8 @@ class EvidenceDecisionEngine:
                 f"compression degradation (Quality {quality}). Lossy recompression creates false-positive ELA spikes."
             )
             rules_triggered.append("RULE-CONFLICT-HEAVY-COMPRESSION-AMBIGUITY")
+            rules_triggered.append("RULE-FUSE-04-COMPRESSION-AMBIGUITY")
+            rules_triggered.append("RULE-FUSE-04")
             candidate_label = VerdictLabel.UNKNOWN
             confidence = None
             risk_score = 0.45

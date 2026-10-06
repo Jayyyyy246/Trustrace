@@ -1,0 +1,37 @@
+{
+  "model_architecture": "ForensicUNet",
+  "task": "STFD Supervised Tamper Localization",
+  "checkpoint_epoch": 4,
+  "input_resolution": [
+    256,
+    256
+  ],
+  "dataset": {
+    "test_manifest": "trusttrace_stfd_clustered_test.csv",
+    "test_samples": 590
+  },
+  "metrics": {
+    "pixel_accuracy": 0.9806323811159295,
+    "foreground_iou": 0.04826822799175958,
+    "foreground_dice": 0.09209136879829008,
+    "foreground_precision": 0.0910885295126356,
+    "foreground_recall": 0.09311653541762692,
+    "background_iou": 0.9806133385246967,
+    "mean_iou": 0.5144407832582282
+  },
+  "baselines": {
+    "all_background_pixel_accuracy": 0.9894513663599047,
+    "all_background_foreground_iou": 0.0,
+    "all_background_foreground_dice": 0.0,
+    "all_background_mean_iou": 0.49472568317995236
+  },
+  "pixel_confusion": {
+    "true_positives": 37980,
+    "false_positives": 378977,
+    "false_negatives": 369896,
+    "true_negatives": 37879387
+  },
+  "evaluation_time_seconds": 50.243520975112915,
+  "timestamp": "2026-10-07 00:35:13",
+  "disclaimer": "This benchmark evaluates the STFD supervised tamper localization model, not the final TRUSTTRACE authenticity pipeline."
+}

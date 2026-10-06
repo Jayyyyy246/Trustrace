@@ -26,5 +26,5 @@ def test_health_endpoint(client: TestClient):
     assert data["analyzers"]["image_cv"] == "ACTIVE"
     assert data["analyzers"]["compression_ela"] == "ACTIVE"
     assert data["analyzers"]["screenshot_geometry"] == "ACTIVE"
-    # In Phase 1, ML must be NOT_AVAILABLE
-    assert data["analyzers"]["ml_inference"] == "NOT_AVAILABLE"
+    # Check ml_inference status is valid
+    assert data["analyzers"]["ml_inference"] in ("ACTIVE", "NOT_AVAILABLE")

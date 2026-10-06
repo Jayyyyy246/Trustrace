@@ -87,13 +87,25 @@ export interface ImageAnalyzerResult {
   ela_variance?: number | null;
 }
 
+export interface OCRRegion {
+  text: string;
+  bbox: [number, number, number, number];
+  confidence?: number | null;
+}
+
 export interface OCRAnalyzerResult {
   status: string;
   engine: string;
   text?: string | null;
+  confidence?: number | null;
+  regions?: OCRRegion[];
+  language?: string | null;
+  processing_time_ms?: number | null;
   word_count: number;
   character_count: number;
   availability_note?: string | null;
+  failure_reason?: string | null;
+  font_anomaly_detected?: boolean;
 }
 
 export interface ScreenshotAnalyzerResult {
@@ -104,6 +116,20 @@ export interface ScreenshotAnalyzerResult {
   indicators: string[];
 }
 
+export interface ModelDiagnostics {
+  name?: string | null;
+  version?: string | null;
+  checkpoint_path?: string | null;
+  checkpoint_sha256?: string | null;
+  architecture?: string | null;
+  device: string;
+  inference_time_ms?: number | null;
+  preprocessing_version: string;
+  calibration_active: boolean;
+  ood_active: boolean;
+  mc_dropout_active: boolean;
+}
+
 export interface MLAnalyzerResult {
   model_status: string;
   model_name?: string | null;
@@ -112,7 +138,14 @@ export interface MLAnalyzerResult {
   confidence?: number | null;
   uncertainty?: number | null;
   class_probabilities?: Record<string, number> | null;
+  ood_detected?: boolean | null;
+  calibrated?: boolean;
+  device?: string | null;
+  inference_time_ms?: number | null;
+  checkpoint_sha256?: string | null;
+  failure_reason?: string | null;
   note: string;
+  diagnostics?: ModelDiagnostics | null;
 }
 
 export interface AnalyzersContainer {
@@ -172,6 +205,7 @@ export interface DashboardStats {
     is_loaded: boolean;
     model_version?: string | null;
     architecture?: string | null;
+    checksum?: string | null;
   };
 }
 

@@ -1,0 +1,69 @@
+{
+  "experiment_name": "stfd_tamper_localization_supervised",
+  "phase": "PHASE_2_TAMPER_LOCALIZATION_MODEL",
+  "random_seed": 42,
+  "dataset": {
+    "name": "Smartphone Tampering Forensic Dataset (STFD - ICASSP 2023)",
+    "isolation_method": "PHASH_LE4_CONNECTED_COMPONENTS",
+    "train_manifest": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\manifests\\trusttrace_stfd_clustered_train.csv",
+    "val_manifest": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\manifests\\trusttrace_stfd_clustered_val.csv",
+    "test_manifest": "C:\\Users\\jay\\New folder (2)\\Trustrace\\data\\manifests\\trusttrace_stfd_clustered_test.csv",
+    "samples": {
+      "train": 2752,
+      "val": 590,
+      "test": 590,
+      "total": 3932
+    },
+    "mask_target": "Official STFD binary ground-truth masks (0=background, 1=tampered)",
+    "mask_interpolation": "NEAREST (Strictly nearest-neighbor, zero bilinear/bicubic distortion)"
+  },
+  "model": {
+    "architecture": "ForensicUNet",
+    "base_filters": 16,
+    "total_parameters": 482737,
+    "encoder_stages": 3,
+    "skip_connections": "Multi-scale concatenation at 1/1, 1/2, 1/4, 1/8 spatial scales",
+    "output_channels": 1,
+    "activation": "Sigmoid (applied during inference and soft dice evaluation)"
+  },
+  "hyperparameters": {
+    "input_resolution": [
+      256,
+      256
+    ],
+    "batch_size": 32,
+    "epochs": 4,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR (T_max=4, eta_min=1e-6)",
+    "loss_function": "Combined Weighted BCEWithLogits (pos_weight=5.0) + Soft Dice Loss",
+    "model_selection_metric": "Validation Foreground Dice Score",
+    "decision_threshold": 0.5
+  },
+  "preprocessing_and_augmentation": {
+    "train": [
+      "Resize((256, 256), Image.Resampling.BILINEAR for Image, NEAREST for Mask)",
+      "Synchronized RandomHorizontalFlip(p=0.5) applied identically to Image and Mask",
+      "ToTensor()",
+      "Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]) for Image",
+      "Binary thresholding (>128 -> 1.0, <=128 -> 0.0) for Mask"
+    ],
+    "val_and_test": [
+      "Resize((256, 256), Image.Resampling.BILINEAR for Image, NEAREST for Mask)",
+      "ToTensor()",
+      "Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]) for Image",
+      "Binary thresholding (>128 -> 1.0, <=128 -> 0.0) for Mask"
+    ]
+  },
+  "software_environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.14.7",
+    "torch_version": "2.14.1+cpu",
+    "torchvision_version": "0.29.1+cpu",
+    "scikit_learn_version": "1.9.0",
+    "numpy_version": "2.5.3",
+    "pillow_version": "12.3.0",
+    "cuda_available": false
+  }
+}

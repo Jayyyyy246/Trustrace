@@ -150,8 +150,9 @@ class EvidenceService:
         ocr_res, ocr_findings = self.ocr_svc.analyze_text(data)
         all_findings.extend(ocr_findings)
 
-        # 4. Screenshot & Viewport Analysis
+        # 4. Screenshot & Viewport Analysis (Executes real pixel and UI layout analysis)
         screen_res, screen_findings = self.screenshot_svc.analyze_screenshot(
+            data=data,
             width=img_res.dimensions.get("width", 0),
             height=img_res.dimensions.get("height", 0),
             aspect_ratio=img_res.aspect_ratio,

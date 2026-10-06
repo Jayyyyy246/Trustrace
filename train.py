@@ -40,10 +40,10 @@ def main() -> int:
         print(f"\n[ERROR] Dataset directory '{data_dir}' does not exist.")
         print("Required dataset layout:")
         print("  <dataset_root>/")
-        print("    ├── REAL/")
-        print("    ├── EDITED/")
-        print("    ├── AI-GENERATED/")
-        print("    └── SCREENSHOT-MANIPULATED/")
+        print("    |-- REAL/")
+        print("    |-- EDITED/")
+        print("    |-- AI-GENERATED/")
+        print("    \\-- SCREENSHOT-MANIPULATED/")
         print("\nNote: Datasets must be provided by the operator. TRUSTTRACE does not fabricate synthetic metrics.")
         return 1
 
