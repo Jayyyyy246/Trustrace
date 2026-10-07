@@ -51,6 +51,8 @@ data/reports/*
 data/dataset/**
 !data/dataset/**/.gitkeep
 data/stfd_patches/
+data/ocr/
+
 
 
 # IDE & OS Files

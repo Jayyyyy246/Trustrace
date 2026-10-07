@@ -1,0 +1,7 @@
+Model,Global_Stream,OCR_Stream,Local_Forensics,Threshold,Accuracy,Macro_F1,EDITED_Recall,EDITED_Precision,EDITED_F1,ROC_AUC,PR_AUC,Status
+Baseline A (Global Alone),YES,NO,NO,0.45,0.7162,0.5497,0.32,0.2424,0.2759,0.5906,0.2784,VALID_BASELINE
+Baseline B (OCR Alone),NO,YES,NO,0.55,0.8176,0.4498,0.0,0.0,0.0,0.5343,0.2066,VALID_BASELINE
+Baseline C (Local Alone),NO,NO,YES,N/A,N/A,N/A,N/A,N/A,N/A,0.5512,0.2053,N/A — out-of-domain / unsupported
+Fusion D (Global + OCR),YES,YES,NO,0.55,0.6892,0.4935,0.2,0.1613,0.1786,0.5906,0.2702,PRIMARY_FUSION_MODEL
+Fusion E (Global + Local),YES,NO,YES,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A — out-of-domain / unsupported
+Fusion F (Global + OCR + Local),YES,YES,YES,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A — out-of-domain / unsupported
