@@ -50,6 +50,8 @@ data/reports/*
 # Dataset images (do not commit large external raw assets)
 data/dataset/**
 !data/dataset/**/.gitkeep
+data/stfd_patches/
+
 
 # IDE & OS Files
 .DS_Store

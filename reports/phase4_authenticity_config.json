@@ -1,0 +1,35 @@
+{
+  "model_architecture": "MobileNetV3-Small",
+  "input_size": [
+    224,
+    224
+  ],
+  "total_parameters": 928162,
+  "trainable_parameters": 928162,
+  "classes": [
+    "REAL",
+    "EDITED"
+  ],
+  "num_classes": 2,
+  "random_seed": 42,
+  "batch_size": 32,
+  "epochs": 10,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "scheduler": "CosineAnnealingLR",
+  "optimizer": "AdamW",
+  "dropout_rate": 0.2,
+  "class_imbalance_handling": "Option A: Inverse Class Frequency CrossEntropyLoss",
+  "class_weights": {
+    "REAL": 0.329956591129303,
+    "EDITED": 1.6700433492660522
+  },
+  "device": "cpu",
+  "total_training_duration_seconds": 1108.83,
+  "best_epoch": 5,
+  "best_val_macro_f1": 0.5027,
+  "default_threshold": 0.5,
+  "val_calibrated_threshold": 0.45,
+  "train_samples": 691,
+  "val_samples": 148
+}
