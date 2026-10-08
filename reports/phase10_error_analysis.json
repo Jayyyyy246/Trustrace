@@ -1,0 +1,38 @@
+{
+  "total_test_gt_regions": 86,
+  "candidate_covered_regions_at_iou_25": 13,
+  "candidate_missed_regions_at_iou_25": 73,
+  "candidate_discovery_recall_pct": 15.12,
+  "taxonomy_raw_counts": {
+    "A1_ocr_line_failure": 0,
+    "A2_dense_window_aspect_mismatch": 50,
+    "A3_typography_insensitivity": 23,
+    "A4_deduplication_suppression": 0,
+    "B1_patch_classifier_miss": 13,
+    "B2_highres_representation_loss": 0,
+    "C1_evidence_aggregation_dilution": 0,
+    "C2_decision_threshold_marginal": 0,
+    "D1_ambiguous_nontext_gt": 0
+  },
+  "taxonomy_percentage_distribution": {
+    "A1_ocr_line_failure": 0.0,
+    "A2_dense_window_aspect_mismatch": 58.14,
+    "A3_typography_insensitivity": 26.74,
+    "A4_deduplication_suppression": 0.0,
+    "B1_patch_classifier_miss": 15.12,
+    "B2_highres_representation_loss": 0.0,
+    "C1_evidence_aggregation_dilution": 0.0,
+    "C2_decision_threshold_marginal": 0.0,
+    "D1_ambiguous_nontext_gt": 0.0
+  },
+  "document_level_failure_breakdown": {
+    "total_edited_docs": 25,
+    "correctly_identified_edited_docs": 3,
+    "missed_edited_docs": 22,
+    "candidate_discovery_failure_docs": 18,
+    "patch_classification_failure_docs": 3,
+    "aggregation_dilution_docs": 1
+  },
+  "dominant_failure_mode": "A2_dense_window_aspect_mismatch",
+  "scientific_diagnosis": "The dominant remaining failure mode (50.0% of missed GT boxes) is A2 (Dense Window Aspect Mismatch). Receipt micro-forgeries in FindItAgain frequently alter isolated single digits (dimensions ~18x30 px). While dense line scanning encompasses the text line containing the alteration, the aspect ratio of the sliding window (width ~1.6 * height) results in union areas that bound the mathematical IoU below the 0.25 threshold. True resolution requires glyph-level character segmentation rather than multi-scale word/line windows."
+}

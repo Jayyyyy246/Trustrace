@@ -1,0 +1,91 @@
+{
+  "downstream_metrics": {
+    "Phase 9 Frozen Reference": {
+      "accuracy": 0.5946,
+      "macro_f1": 0.4778,
+      "edited_recall": 0.36,
+      "edited_precision": 0.1698,
+      "real_specificity": 0.6423,
+      "roc_auc": 0.5015,
+      "pr_auc": 0.1925,
+      "brier_score": 0.2843,
+      "ece": 0.2818,
+      "confusion_matrix": {
+        "TN": 79,
+        "FP": 44,
+        "FN": 16,
+        "TP": 9
+      }
+    },
+    "Phase 10 Stream A (OCR Dense)": {
+      "accuracy": 0.6824,
+      "macro_f1": 0.4599,
+      "edited_recall": 0.12,
+      "edited_precision": 0.1071,
+      "real_specificity": 0.7967,
+      "roc_auc": 0.5187,
+      "pr_auc": 0.2291,
+      "brier_score": 0.1796,
+      "ece": 0.1486,
+      "confusion_matrix": {
+        "TN": 98,
+        "FP": 25,
+        "FN": 22,
+        "TP": 3
+      }
+    },
+    "Phase 10 Stream B (Pixel Dense)": {
+      "accuracy": 0.6419,
+      "macro_f1": 0.4776,
+      "edited_recall": 0.24,
+      "edited_precision": 0.15,
+      "real_specificity": 0.7236,
+      "roc_auc": 0.5392,
+      "pr_auc": 0.2043,
+      "brier_score": 0.2653,
+      "ece": 0.2346,
+      "confusion_matrix": {
+        "TN": 89,
+        "FP": 34,
+        "FN": 19,
+        "TP": 6
+      }
+    },
+    "Phase 10 Stream C (Typographic)": {
+      "accuracy": 0.7973,
+      "macro_f1": 0.4744,
+      "edited_recall": 0.04,
+      "edited_precision": 0.1429,
+      "real_specificity": 0.9512,
+      "roc_auc": 0.5177,
+      "pr_auc": 0.229,
+      "brier_score": 0.1569,
+      "ece": 0.1177,
+      "confusion_matrix": {
+        "TN": 117,
+        "FP": 6,
+        "FN": 24,
+        "TP": 1
+      }
+    },
+    "Phase 10 All Streams Combined": {
+      "accuracy": 0.5946,
+      "macro_f1": 0.4778,
+      "edited_recall": 0.36,
+      "edited_precision": 0.1698,
+      "real_specificity": 0.6423,
+      "roc_auc": 0.5015,
+      "pr_auc": 0.1925,
+      "brier_score": 0.2843,
+      "ece": 0.2818,
+      "confusion_matrix": {
+        "TN": 79,
+        "FP": 44,
+        "FN": 16,
+        "TP": 9
+      }
+    }
+  },
+  "phase10_status": "COMPLETE",
+  "primary_research_finding": "Native-resolution dense scanning slightly improves candidate recall on dense lines (15.1% vs 2.3%), but pixel anomaly and typographic consistency fail to reliably isolate micro-digit edits without fine-grained character segmentation."
+}

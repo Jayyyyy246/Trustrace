@@ -1,0 +1,27 @@
+{
+  "Geometry_Only": {
+    "recall_iou_25": 0.3256,
+    "covered": 28,
+    "cands_doc": 14.2
+  },
+  "Baseline_Only": {
+    "recall_iou_25": 0.2442,
+    "covered": 21,
+    "cands_doc": 11.5
+  },
+  "Stroke_Contrast_Only": {
+    "recall_iou_25": 0.2093,
+    "covered": 18,
+    "cands_doc": 9.8
+  },
+  "Spacing_Only": {
+    "recall_iou_25": 0.1628,
+    "covered": 14,
+    "cands_doc": 7.4
+  },
+  "All_Typographic_Features": {
+    "recall_iou_25": 0.0,
+    "covered": 0,
+    "cands_doc": 3.0
+  }
+}
