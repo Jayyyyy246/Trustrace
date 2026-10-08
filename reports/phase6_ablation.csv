@@ -1,0 +1,5 @@
+Model,Input,Architecture,Supervision,Threshold,Accuracy,Macro_F1,EDITED_Recall,EDITED_Precision,EDITED_F1,ROC_AUC,PR_AUC,Status
+Baseline A (Global Alone),Global 224x224,MobileNetV3-Small,Image-level,0.45,0.7162,0.5497,0.32,0.2424,0.2759,0.5906,0.2784,VALID_BASELINE
+Baseline B (Patch-CNN),Native 128x128 Patch,3-Stage CNN,Ground-Truth Localized,0.7,0.8176,0.6178,0.28,0.4375,0.3415,0.8007,0.4363,CNN_PATCH_BASELINE
+Baseline C (Doc-PatchFormer),Native 128x128 Patch,2-Layer Patch Transformer,Ground-Truth Localized,0.7,0.8919,0.7941,0.6,0.7143,0.6522,0.88,0.7607,TRANSFORMER_MODEL
+Baseline D (Phase 5 Fusion),Global 224x224 + OCR,Logistic Regression Fusion,Image-level,0.55,0.7432,0.4935,0.2,0.1613,0.1786,0.5906,0.2784,MULTIMODAL_FUSION

@@ -1,0 +1,159 @@
+{
+  "benchmark": "TRUSTTRACE Phase 6 Doc-PatchFormer Benchmark",
+  "patch_level_test_metrics": {
+    "accuracy": 0.744,
+    "forged_recall": 0.7558,
+    "forged_precision": 0.4305,
+    "forged_f1": 0.5485,
+    "roc_auc": 0.8398,
+    "pr_auc": 0.6563
+  },
+  "document_level_metrics": {
+    "baseline_a_global": {
+      "threshold": 0.45,
+      "accuracy": 0.7162,
+      "balanced_accuracy": 0.7083,
+      "macro_f1": 0.5497,
+      "weighted_f1": 0.7305,
+      "roc_auc": 0.5906,
+      "pr_auc": 0.2784,
+      "real_precision": 0.8522,
+      "real_recall": 0.7967,
+      "real_f1": 0.8235,
+      "edited_precision": 0.2424,
+      "edited_recall": 0.32,
+      "edited_f1": 0.2759,
+      "confusion_matrix": {
+        "TN": 98,
+        "FP": 25,
+        "FN": 17,
+        "TP": 8
+      }
+    },
+    "baseline_b_patch_cnn": {
+      "threshold": 0.7,
+      "accuracy": 0.8176,
+      "balanced_accuracy": 0.6034,
+      "macro_f1": 0.6178,
+      "weighted_f1": 0.8008,
+      "roc_auc": 0.8007,
+      "pr_auc": 0.4363,
+      "real_precision": 0.8636,
+      "real_recall": 0.9268,
+      "real_f1": 0.8941,
+      "edited_precision": 0.4375,
+      "edited_recall": 0.28,
+      "edited_f1": 0.3415,
+      "confusion_matrix": {
+        "TN": 114,
+        "FP": 9,
+        "FN": 18,
+        "TP": 7
+      }
+    },
+    "baseline_c_doc_patchformer": {
+      "threshold": 0.7,
+      "accuracy": 0.8919,
+      "balanced_accuracy": 0.7756,
+      "macro_f1": 0.7941,
+      "weighted_f1": 0.8881,
+      "roc_auc": 0.88,
+      "pr_auc": 0.7607,
+      "real_precision": 0.9213,
+      "real_recall": 0.9512,
+      "real_f1": 0.936,
+      "edited_precision": 0.7143,
+      "edited_recall": 0.6,
+      "edited_f1": 0.6522,
+      "confusion_matrix": {
+        "TN": 117,
+        "FP": 6,
+        "FN": 10,
+        "TP": 15
+      }
+    },
+    "baseline_d_phase5_fusion": {
+      "threshold": 0.55,
+      "accuracy": 0.7432,
+      "balanced_accuracy": 0.6268,
+      "macro_f1": 0.4935,
+      "weighted_f1": 0.7487,
+      "roc_auc": 0.5906,
+      "pr_auc": 0.2784,
+      "real_precision": 0.84,
+      "real_recall": 0.8537,
+      "real_f1": 0.8468,
+      "edited_precision": 0.1613,
+      "edited_recall": 0.2,
+      "edited_f1": 0.1786,
+      "confusion_matrix": {
+        "TN": 105,
+        "FP": 18,
+        "FN": 20,
+        "TP": 5
+      }
+    }
+  },
+  "ablation_summary": [
+    {
+      "Model": "Baseline A (Global Alone)",
+      "Input": "Global 224x224",
+      "Architecture": "MobileNetV3-Small",
+      "Supervision": "Image-level",
+      "Threshold": 0.45,
+      "Accuracy": 0.7162,
+      "Macro_F1": 0.5497,
+      "EDITED_Recall": 0.32,
+      "EDITED_Precision": 0.2424,
+      "EDITED_F1": 0.2759,
+      "ROC_AUC": 0.5906,
+      "PR_AUC": 0.2784,
+      "Status": "VALID_BASELINE"
+    },
+    {
+      "Model": "Baseline B (Patch-CNN)",
+      "Input": "Native 128x128 Patch",
+      "Architecture": "3-Stage CNN",
+      "Supervision": "Ground-Truth Localized",
+      "Threshold": 0.7,
+      "Accuracy": 0.8176,
+      "Macro_F1": 0.6178,
+      "EDITED_Recall": 0.28,
+      "EDITED_Precision": 0.4375,
+      "EDITED_F1": 0.3415,
+      "ROC_AUC": 0.8007,
+      "PR_AUC": 0.4363,
+      "Status": "CNN_PATCH_BASELINE"
+    },
+    {
+      "Model": "Baseline C (Doc-PatchFormer)",
+      "Input": "Native 128x128 Patch",
+      "Architecture": "2-Layer Patch Transformer",
+      "Supervision": "Ground-Truth Localized",
+      "Threshold": 0.7,
+      "Accuracy": 0.8919,
+      "Macro_F1": 0.7941,
+      "EDITED_Recall": 0.6,
+      "EDITED_Precision": 0.7143,
+      "EDITED_F1": 0.6522,
+      "ROC_AUC": 0.88,
+      "PR_AUC": 0.7607,
+      "Status": "TRANSFORMER_MODEL"
+    },
+    {
+      "Model": "Baseline D (Phase 5 Fusion)",
+      "Input": "Global 224x224 + OCR",
+      "Architecture": "Logistic Regression Fusion",
+      "Supervision": "Image-level",
+      "Threshold": 0.55,
+      "Accuracy": 0.7432,
+      "Macro_F1": 0.4935,
+      "EDITED_Recall": 0.2,
+      "EDITED_Precision": 0.1613,
+      "EDITED_F1": 0.1786,
+      "ROC_AUC": 0.5906,
+      "PR_AUC": 0.2784,
+      "Status": "MULTIMODAL_FUSION"
+    }
+  ]
+}

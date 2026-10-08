@@ -52,7 +52,7 @@ data/dataset/**
 !data/dataset/**/.gitkeep
 data/stfd_patches/
 data/ocr/
-
+data/document_patches/
 
 
 # IDE & OS Files
