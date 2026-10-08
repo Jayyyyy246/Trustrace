@@ -1,0 +1,4078 @@
+{
+  "pipeline_results": {
+    "Pipeline A (OCR-Only)": {
+      "accuracy": 0.7905,
+      "balanced_accuracy": 0.4915,
+      "macro_f1": 0.4714,
+      "weighted_f1": 0.7434,
+      "real_precision": 0.8286,
+      "real_recall": 0.9431,
+      "real_f1": 0.8821,
+      "edited_precision": 0.125,
+      "edited_recall": 0.04,
+      "edited_f1": 0.0606,
+      "roc_auc": 0.4725,
+      "pr_auc": 0.1608,
+      "confusion_matrix": {
+        "TN": 116,
+        "FP": 7,
+        "FN": 24,
+        "TP": 1
+      },
+      "doc_predictions": [
+        {
+          "sample_id": "X51005433492",
+          "label": "REAL",
+          "prob": 0.36306,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.36306,
+          "max_prob": 0.49532
+        },
+        {
+          "sample_id": "X51005433538",
+          "label": "REAL",
+          "prob": 0.29502,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.29502,
+          "max_prob": 0.32834
+        },
+        {
+          "sample_id": "X51005433541",
+          "label": "REAL",
+          "prob": 0.28653,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.28653,
+          "max_prob": 0.37872
+        },
+        {
+          "sample_id": "X51005442334",
+          "label": "REAL",
+          "prob": 0.40294,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.40294,
+          "max_prob": 0.52308
+        },
+        {
+          "sample_id": "X51005442379",
+          "label": "EDITED",
+          "prob": 0.32616,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.32616,
+          "max_prob": 0.48339
+        },
+        {
+          "sample_id": "X51005442384",
+          "label": "REAL",
+          "prob": 0.32125,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.32125,
+          "max_prob": 0.37395
+        },
+        {
+          "sample_id": "X51005442386",
+          "label": "REAL",
+          "prob": 0.37195,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.37195,
+          "max_prob": 0.46096
+        },
+        {
+          "sample_id": "X51005442394",
+          "label": "REAL",
+          "prob": 0.2672,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.2672,
+          "max_prob": 0.3024
+        },
+        {
+          "sample_id": "X51006414470",
+          "label": "REAL",
+          "prob": 0.75283,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.75283,
+          "max_prob": 0.87668
+        },
+        {
+          "sample_id": "X51006414483",
+          "label": "REAL",
+          "prob": 0.39038,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.39038,
+          "max_prob": 0.43899
+        },
+        {
+          "sample_id": "X51006414592",
+          "label": "REAL",
+          "prob": 0.33491,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.33491,
+          "max_prob": 0.41621
+        },
+        {
+          "sample_id": "X51006414633",
+          "label": "REAL",
+          "prob": 0.26872,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.26872,
+          "max_prob": 0.28088
+        },
+        {
+          "sample_id": "X51006913061",
+          "label": "REAL",
+          "prob": 0.46683,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.46683,
+          "max_prob": 0.56538
+        },
+        {
+          "sample_id": "X51006913067",
+          "label": "REAL",
+          "prob": 0.36114,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.36114,
+          "max_prob": 0.51677
+        },
+        {
+          "sample_id": "X51007231274",
+          "label": "REAL",
+          "prob": 0.40199,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.40199,
+          "max_prob": 0.48368
+        },
+        {
+          "sample_id": "X51007231336",
+          "label": "REAL",
+          "prob": 0.30224,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.30224,
+          "max_prob": 0.34762
+        },
+        {
+          "sample_id": "X51005433514",
+          "label": "REAL",
+          "prob": 0.22509,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.22509,
+          "max_prob": 0.22824
+        },
+        {
+          "sample_id": "X51005442375",
+          "label": "REAL",
+          "prob": 0.37193,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.37193,
+          "max_prob": 0.3904
+        },
+        {
+          "sample_id": "X51006414593",
+          "label": "REAL",
+          "prob": 0.26097,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.26097,
+          "max_prob": 0.32134
+        },
+        {
+          "sample_id": "X51006913023",
+          "label": "EDITED",
+          "prob": 0.47908,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.47908,
+          "max_prob": 0.54967
+        },
+        {
+          "sample_id": "X51006913024",
+          "label": "EDITED",
+          "prob": 0.43312,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.43312,
+          "max_prob": 0.54868
+        },
+        {
+          "sample_id": "X51006913028",
+          "label": "EDITED",
+          "prob": 0.54753,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.54753,
+          "max_prob": 0.62905
+        },
+        {
+          "sample_id": "X51006913060",
+          "label": "REAL",
+          "prob": 0.44571,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.44571,
+          "max_prob": 0.59203
+        },
+        {
+          "sample_id": "X51007231341",
+          "label": "REAL",
+          "prob": 0.41926,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.41926,
+          "max_prob": 0.56766
+        },
+        {
+          "sample_id": "X51007103692",
+          "label": "EDITED",
+          "prob": 0.29402,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.29402,
+          "max_prob": 0.55943
+        },
+        {
+          "sample_id": "X51007339112",
+          "label": "EDITED",
+          "prob": 0.60537,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.60537,
+          "max_prob": 0.77392
+        },
+        {
+          "sample_id": "X51006857071",
+          "label": "EDITED",
+          "prob": 0.38736,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.38736,
+          "max_prob": 0.44767
+        },
+        {
+          "sample_id": "X51007231275",
+          "label": "EDITED",
+          "prob": 0.34733,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.34733,
+          "max_prob": 0.35927
+        },
+        {
+          "sample_id": "X51005587254",
+          "label": "EDITED",
+          "prob": 0.42475,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.42475,
+          "max_prob": 0.55112
+        },
+        {
+          "sample_id": "X51006555806",
+          "label": "EDITED",
+          "prob": 0.37143,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.37143,
+          "max_prob": 0.40767
+        },
+        {
+          "sample_id": "X51006401977",
+          "label": "EDITED",
+          "prob": 0.73685,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.73685,
+          "max_prob": 0.94084
+        },
+        {
+          "sample_id": "X51005447850",
+          "label": "EDITED",
+          "prob": 0.21769,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.21769,
+          "max_prob": 0.30362
+        },
+        {
+          "sample_id": "X51006619550",
+          "label": "EDITED",
+          "prob": 0.45734,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.45734,
+          "max_prob": 0.63528
+        },
+        {
+          "sample_id": "X51005675914",
+          "label": "EDITED",
+          "prob": 0.26415,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.26415,
+          "max_prob": 0.39546
+        },
+        {
+          "sample_id": "X51007846321",
+          "label": "EDITED",
+          "prob": 0.44369,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.44369,
+          "max_prob": 0.56676
+        },
+        {
+          "sample_id": "X51005719888",
+          "label": "EDITED",
+          "prob": 0.39382,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.39382,
+          "max_prob": 0.46892
+        },
+        {
+          "sample_id": "X51005711404",
+          "label": "EDITED",
+          "prob": 0.06758,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.06758,
+          "max_prob": 0.07929
+        },
+        {
+          "sample_id": "X51008114321",
+          "label": "EDITED",
+          "prob": 0.55884,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.55884,
+          "max_prob": 0.63711
+        },
+        {
+          "sample_id": "X51006557117",
+          "label": "EDITED",
+          "prob": 0.28005,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.28005,
+          "max_prob": 0.30438
+        },
+        {
+          "sample_id": "X00016469622",
+          "label": "EDITED",
+          "prob": 0.56599,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.56599,
+          "max_prob": 0.65763
+        },
+        {
+          "sample_id": "X51005757304",
+          "label": "EDITED",
+          "prob": 0.46233,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.46233,
+          "max_prob": 0.52331
+        },
+        {
+          "sample_id": "X51005365179",
+          "label": "EDITED",
+          "prob": 0.34432,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.34432,
+          "max_prob": 0.49928
+        },
+        {
+          "sample_id": "X51005757243",
+          "label": "EDITED",
+          "prob": 0.32756,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.32756,
+          "max_prob": 0.4153
+        },
+        {
+          "sample_id": "X51005433553",
+          "label": "EDITED",
+          "prob": 0.20843,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.20843,
+          "max_prob": 0.27281
+        },
+        {
+          "sample_id": "X51008099081",
+          "label": "EDITED",
+          "prob": 0.27155,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.27155,
+          "max_prob": 0.43144
+        },
+        {
+          "sample_id": "X51006392167",
+          "label": "REAL",
+          "prob": 0.69863,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.69863,
+          "max_prob": 0.93476
+        },
+        {
+          "sample_id": "X51005676544",
+          "label": "REAL",
+          "prob": 0.49373,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.49373,
+          "max_prob": 0.56495
+        },
+        {
+          "sample_id": "X51006557209",
+          "label": "REAL",
+          "prob": 0.45815,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.45815,
+          "max_prob": 0.70634
+        },
+        {
+          "sample_id": "X51006387973",
+          "label": "REAL",
+          "prob": 0.32762,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.32762,
+          "max_prob": 0.35783
+        },
+        {
+          "sample_id": "X51006441474",
+          "label": "REAL",
+          "prob": 0.59227,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.59227,
+          "max_prob": 0.76776
+        },
+        {
+          "sample_id": "X51006414599",
+          "label": "REAL",
+          "prob": 0.23598,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.23598,
+          "max_prob": 0.33815
+        },
+        {
+          "sample_id": "X51005724623",
+          "label": "REAL",
+          "prob": 0.27814,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.27814,
+          "max_prob": 0.31126
+        },
+        {
+          "sample_id": "X51006554833",
+          "label": "REAL",
+          "prob": 0.61102,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.61102,
+          "max_prob": 0.66053
+        },
+        {
+          "sample_id": "X51006556806",
+          "label": "REAL",
+          "prob": 0.44819,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.44819,
+          "max_prob": 0.60956
+        },
+        {
+          "sample_id": "X51007391372",
+          "label": "REAL",
+          "prob": 0.70818,
+          "pred": 1,
+          "num_cands": 20,
+          "top3_mean": 0.70818,
+          "max_prob": 0.72723
+        },
+        {
+          "sample_id": "X51006334926",
+          "label": "REAL",
+          "prob": 0.42393,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.42393,
+          "max_prob": 0.50743
+        },
+        {
+          "sample_id": "X51006619842",
+          "label": "REAL",
+          "prob": 0.74465,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.74465,
+          "max_prob": 0.77651
+        },
+        {
+          "sample_id": "X51005719814",
+          "label": "REAL",
+          "prob": 0.41819,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.41819,
+          "max_prob": 0.60194
+        },
+        {
+          "sample_id": "X51005675103",
+          "label": "REAL",
+          "prob": 0.49103,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.49103,
+          "max_prob": 0.6173
+        },
+        {
+          "sample_id": "X51005719856",
+          "label": "REAL",
+          "prob": 0.32108,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.32108,
+          "max_prob": 0.35056
+        },
+        {
+          "sample_id": "X51008099046",
+          "label": "REAL",
+          "prob": 0.22775,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.22775,
+          "max_prob": 0.28798
+        },
+        {
+          "sample_id": "X51006466070",
+          "label": "REAL",
+          "prob": 0.75454,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.75454,
+          "max_prob": 0.82013
+        },
+        {
+          "sample_id": "X51006414512",
+          "label": "REAL",
+          "prob": 0.26507,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.26507,
+          "max_prob": 0.39094
+        },
+        {
+          "sample_id": "X51005676536",
+          "label": "REAL",
+          "prob": 0.47788,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.47788,
+          "max_prob": 0.52073
+        },
+        {
+          "sample_id": "X51006867435",
+          "label": "REAL",
+          "prob": 0.37611,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.37611,
+          "max_prob": 0.64692
+        },
+        {
+          "sample_id": "X51007339657",
+          "label": "REAL",
+          "prob": 0.41481,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.41481,
+          "max_prob": 0.46412
+        },
+        {
+          "sample_id": "X51006556730",
+          "label": "REAL",
+          "prob": 0.64056,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.64056,
+          "max_prob": 0.73692
+        },
+        {
+          "sample_id": "X51005806695",
+          "label": "REAL",
+          "prob": 0.39736,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.39736,
+          "max_prob": 0.53018
+        },
+        {
+          "sample_id": "X00016469669",
+          "label": "REAL",
+          "prob": 0.43607,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.43607,
+          "max_prob": 0.6368
+        },
+        {
+          "sample_id": "X51007339131",
+          "label": "REAL",
+          "prob": 0.70433,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.70433,
+          "max_prob": 0.70902
+        },
+        {
+          "sample_id": "X51005757351",
+          "label": "REAL",
+          "prob": 0.68603,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.68603,
+          "max_prob": 0.80121
+        },
+        {
+          "sample_id": "X51006619772",
+          "label": "REAL",
+          "prob": 0.50921,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.50921,
+          "max_prob": 0.59243
+        },
+        {
+          "sample_id": "X51006389865",
+          "label": "REAL",
+          "prob": 0.33033,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.33033,
+          "max_prob": 0.52517
+        },
+        {
+          "sample_id": "X51006008073",
+          "label": "REAL",
+          "prob": 0.14362,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.14362,
+          "max_prob": 0.17815
+        },
+        {
+          "sample_id": "X51005663301",
+          "label": "REAL",
+          "prob": 0.52311,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.52311,
+          "max_prob": 0.56098
+        },
+        {
+          "sample_id": "X51005605332",
+          "label": "REAL",
+          "prob": 0.32309,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.32309,
+          "max_prob": 0.48063
+        },
+        {
+          "sample_id": "X51006679216",
+          "label": "REAL",
+          "prob": 0.6615,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.6615,
+          "max_prob": 0.77752
+        },
+        {
+          "sample_id": "X51008099043",
+          "label": "REAL",
+          "prob": 0.10403,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.10403,
+          "max_prob": 0.10972
+        },
+        {
+          "sample_id": "X51006414600",
+          "label": "REAL",
+          "prob": 0.52211,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.52211,
+          "max_prob": 0.64532
+        },
+        {
+          "sample_id": "X51006389963",
+          "label": "REAL",
+          "prob": 0.22743,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.22743,
+          "max_prob": 0.30038
+        },
+        {
+          "sample_id": "X51006619779",
+          "label": "REAL",
+          "prob": 0.45953,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.45953,
+          "max_prob": 0.74307
+        },
+        {
+          "sample_id": "X51006856981",
+          "label": "REAL",
+          "prob": 0.75055,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.75055,
+          "max_prob": 0.76993
+        },
+        {
+          "sample_id": "X51005587267",
+          "label": "REAL",
+          "prob": 0.17809,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.17809,
+          "max_prob": 0.40267
+        },
+        {
+          "sample_id": "X51005200938",
+          "label": "REAL",
+          "prob": 0.67199,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.67199,
+          "max_prob": 0.88635
+        },
+        {
+          "sample_id": "X51006557168",
+          "label": "REAL",
+          "prob": 0.26695,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.26695,
+          "max_prob": 0.29766
+        },
+        {
+          "sample_id": "X51006466065",
+          "label": "REAL",
+          "prob": 0.39752,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.39752,
+          "max_prob": 0.68151
+        },
+        {
+          "sample_id": "X51007339094",
+          "label": "REAL",
+          "prob": 0.64317,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.64317,
+          "max_prob": 0.85443
+        },
+        {
+          "sample_id": "X51006349081",
+          "label": "REAL",
+          "prob": 0.37553,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.37553,
+          "max_prob": 0.51746
+        },
+        {
+          "sample_id": "X51006556610",
+          "label": "REAL",
+          "prob": 0.35781,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.35781,
+          "max_prob": 0.47202
+        },
+        {
+          "sample_id": "X51005757308",
+          "label": "REAL",
+          "prob": 0.39599,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.39599,
+          "max_prob": 0.5067
+        },
+        {
+          "sample_id": "X51005663311",
+          "label": "REAL",
+          "prob": 0.46814,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.46814,
+          "max_prob": 0.55727
+        },
+        {
+          "sample_id": "X51007846451",
+          "label": "REAL",
+          "prob": 0.5339,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.5339,
+          "max_prob": 0.80589
+        },
+        {
+          "sample_id": "X51005453802",
+          "label": "REAL",
+          "prob": 0.34774,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.34774,
+          "max_prob": 0.61886
+        },
+        {
+          "sample_id": "X51005711442",
+          "label": "REAL",
+          "prob": 0.24004,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.24004,
+          "max_prob": 0.37085
+        },
+        {
+          "sample_id": "X51006619338",
+          "label": "REAL",
+          "prob": 0.54453,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.54453,
+          "max_prob": 0.58678
+        },
+        {
+          "sample_id": "X51005442376",
+          "label": "REAL",
+          "prob": 0.29808,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.29808,
+          "max_prob": 0.34682
+        },
+        {
+          "sample_id": "X51006414427",
+          "label": "REAL",
+          "prob": 0.39231,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.39231,
+          "max_prob": 0.51185
+        },
+        {
+          "sample_id": "X51006414429",
+          "label": "REAL",
+          "prob": 0.38542,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.38542,
+          "max_prob": 0.44343
+        },
+        {
+          "sample_id": "X51006328919",
+          "label": "REAL",
+          "prob": 0.38529,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.38529,
+          "max_prob": 0.68456
+        },
+        {
+          "sample_id": "X51006329395",
+          "label": "REAL",
+          "prob": 0.38418,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.38418,
+          "max_prob": 0.68152
+        },
+        {
+          "sample_id": "X51007846305",
+          "label": "REAL",
+          "prob": 0.61752,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.61752,
+          "max_prob": 0.75003
+        },
+        {
+          "sample_id": "X51008099089",
+          "label": "REAL",
+          "prob": 0.07765,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.07765,
+          "max_prob": 0.11367
+        },
+        {
+          "sample_id": "X51006414708",
+          "label": "REAL",
+          "prob": 0.35132,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.35132,
+          "max_prob": 0.49756
+        },
+        {
+          "sample_id": "X51006502531",
+          "label": "REAL",
+          "prob": 0.49515,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.49515,
+          "max_prob": 0.64444
+        },
+        {
+          "sample_id": "X51007846387",
+          "label": "REAL",
+          "prob": 0.47511,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.47511,
+          "max_prob": 0.5431
+        },
+        {
+          "sample_id": "X51005757220",
+          "label": "REAL",
+          "prob": 0.62476,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.62476,
+          "max_prob": 0.707
+        },
+        {
+          "sample_id": "X51006857132",
+          "label": "REAL",
+          "prob": 0.5566,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.5566,
+          "max_prob": 0.70405
+        },
+        {
+          "sample_id": "X51006912974",
+          "label": "REAL",
+          "prob": 0.45474,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.45474,
+          "max_prob": 0.64017
+        },
+        {
+          "sample_id": "X51005757342",
+          "label": "REAL",
+          "prob": 0.19769,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.19769,
+          "max_prob": 0.25213
+        },
+        {
+          "sample_id": "X51005719864",
+          "label": "REAL",
+          "prob": 0.50281,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.50281,
+          "max_prob": 0.53918
+        },
+        {
+          "sample_id": "X51006556839",
+          "label": "REAL",
+          "prob": 0.40235,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.40235,
+          "max_prob": 0.54431
+        },
+        {
+          "sample_id": "X51005719896",
+          "label": "REAL",
+          "prob": 0.06341,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.06341,
+          "max_prob": 0.06692
+        },
+        {
+          "sample_id": "X51006388069",
+          "label": "REAL",
+          "prob": 0.48549,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.48549,
+          "max_prob": 0.68772
+        },
+        {
+          "sample_id": "X51005582745",
+          "label": "REAL",
+          "prob": 0.50445,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.50445,
+          "max_prob": 0.61626
+        },
+        {
+          "sample_id": "X51006555814",
+          "label": "REAL",
+          "prob": 0.76984,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.76984,
+          "max_prob": 0.90447
+        },
+        {
+          "sample_id": "X51006556740",
+          "label": "REAL",
+          "prob": 0.33598,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.33598,
+          "max_prob": 0.4001
+        },
+        {
+          "sample_id": "X51005719893",
+          "label": "REAL",
+          "prob": 0.2692,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.2692,
+          "max_prob": 0.36934
+        },
+        {
+          "sample_id": "X51007846360",
+          "label": "REAL",
+          "prob": 0.30664,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.30664,
+          "max_prob": 0.61611
+        },
+        {
+          "sample_id": "X51007103702",
+          "label": "REAL",
+          "prob": 0.53061,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.53061,
+          "max_prob": 0.62508
+        },
+        {
+          "sample_id": "X51008099084",
+          "label": "REAL",
+          "prob": 0.12828,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.12828,
+          "max_prob": 0.19495
+        },
+        {
+          "sample_id": "X51006008091",
+          "label": "REAL",
+          "prob": 0.22099,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.22099,
+          "max_prob": 0.34394
+        },
+        {
+          "sample_id": "X51009008091",
+          "label": "REAL",
+          "prob": 0.22099,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.22099,
+          "max_prob": 0.34394
+        },
+        {
+          "sample_id": "X51005361898",
+          "label": "REAL",
+          "prob": 0.57016,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.57016,
+          "max_prob": 0.68436
+        },
+        {
+          "sample_id": "X51005442382",
+          "label": "REAL",
+          "prob": 0.28523,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.28523,
+          "max_prob": 0.32415
+        },
+        {
+          "sample_id": "X00016469676",
+          "label": "REAL",
+          "prob": 0.21611,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.21611,
+          "max_prob": 0.35315
+        },
+        {
+          "sample_id": "X51005746207",
+          "label": "REAL",
+          "prob": 0.46071,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.46071,
+          "max_prob": 0.49559
+        },
+        {
+          "sample_id": "X51005268472",
+          "label": "REAL",
+          "prob": 0.43643,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.43643,
+          "max_prob": 0.54252
+        },
+        {
+          "sample_id": "X51005745298",
+          "label": "REAL",
+          "prob": 0.17257,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.17257,
+          "max_prob": 0.2224
+        },
+        {
+          "sample_id": "X51006556852",
+          "label": "REAL",
+          "prob": 0.39876,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.39876,
+          "max_prob": 0.49456
+        },
+        {
+          "sample_id": "X51008145504",
+          "label": "REAL",
+          "prob": 0.23769,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.23769,
+          "max_prob": 0.30354
+        },
+        {
+          "sample_id": "X51006466778",
+          "label": "REAL",
+          "prob": 0.52577,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.52577,
+          "max_prob": 0.84559
+        },
+        {
+          "sample_id": "X51008099073",
+          "label": "REAL",
+          "prob": 0.27676,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.27676,
+          "max_prob": 0.30088
+        },
+        {
+          "sample_id": "X51006556654",
+          "label": "REAL",
+          "prob": 0.22162,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.22162,
+          "max_prob": 0.25397
+        },
+        {
+          "sample_id": "X51005806703",
+          "label": "REAL",
+          "prob": 0.23084,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.23084,
+          "max_prob": 0.27558
+        },
+        {
+          "sample_id": "X51006557508",
+          "label": "REAL",
+          "prob": 0.38056,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.38056,
+          "max_prob": 0.47485
+        },
+        {
+          "sample_id": "X51005676537",
+          "label": "REAL",
+          "prob": 0.5356,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.5356,
+          "max_prob": 0.61256
+        },
+        {
+          "sample_id": "X51006714066",
+          "label": "REAL",
+          "prob": 0.6448,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.6448,
+          "max_prob": 0.82739
+        },
+        {
+          "sample_id": "X51005568884",
+          "label": "REAL",
+          "prob": 0.20334,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.20334,
+          "max_prob": 0.34494
+        },
+        {
+          "sample_id": "X51005757273",
+          "label": "REAL",
+          "prob": 0.33452,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.33452,
+          "max_prob": 0.74546
+        },
+        {
+          "sample_id": "X51005757248",
+          "label": "REAL",
+          "prob": 0.21045,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.21045,
+          "max_prob": 0.28427
+        },
+        {
+          "sample_id": "X51005663280",
+          "label": "REAL",
+          "prob": 0.31522,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.31522,
+          "max_prob": 0.37253
+        },
+        {
+          "sample_id": "X51006387740",
+          "label": "REAL",
+          "prob": 0.64368,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.64368,
+          "max_prob": 0.70571
+        },
+        {
+          "sample_id": "X51006713996",
+          "label": "REAL",
+          "prob": 0.25028,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.25028,
+          "max_prob": 0.38716
+        },
+        {
+          "sample_id": "X51006414675",
+          "label": "REAL",
+          "prob": 0.45815,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.45815,
+          "max_prob": 0.61707
+        },
+        {
+          "sample_id": "X51007339156",
+          "label": "REAL",
+          "prob": 0.58066,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.58066,
+          "max_prob": 0.71383
+        },
+        {
+          "sample_id": "X51006328937",
+          "label": "REAL",
+          "prob": 0.47223,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.47223,
+          "max_prob": 0.52635
+        },
+        {
+          "sample_id": "X51006329399",
+          "label": "REAL",
+          "prob": 0.47223,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.47223,
+          "max_prob": 0.52635
+        },
+        {
+          "sample_id": "X51006619757",
+          "label": "REAL",
+          "prob": 0.65638,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.65638,
+          "max_prob": 0.7501
+        }
+      ]
+    },
+    "Pipeline B (Morphology-Only)": {
+      "accuracy": 0.1689,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.1445,
+      "weighted_f1": 0.0488,
+      "real_precision": 0.0,
+      "real_recall": 0.0,
+      "real_f1": 0.0,
+      "edited_precision": 0.1689,
+      "edited_recall": 1.0,
+      "edited_f1": 0.289,
+      "roc_auc": 0.4751,
+      "pr_auc": 0.1674,
+      "confusion_matrix": {
+        "TN": 0,
+        "FP": 123,
+        "FN": 0,
+        "TP": 25
+      },
+      "doc_predictions": [
+        {
+          "sample_id": "X51005433492",
+          "label": "REAL",
+          "prob": 0.85847,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.85847,
+          "max_prob": 0.89358
+        },
+        {
+          "sample_id": "X51005433538",
+          "label": "REAL",
+          "prob": 0.85856,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.85856,
+          "max_prob": 0.90663
+        },
+        {
+          "sample_id": "X51005433541",
+          "label": "REAL",
+          "prob": 0.78044,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.78044,
+          "max_prob": 0.78703
+        },
+        {
+          "sample_id": "X51005442334",
+          "label": "REAL",
+          "prob": 0.89133,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89133,
+          "max_prob": 0.90223
+        },
+        {
+          "sample_id": "X51005442379",
+          "label": "EDITED",
+          "prob": 0.85286,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.85286,
+          "max_prob": 0.87587
+        },
+        {
+          "sample_id": "X51005442384",
+          "label": "REAL",
+          "prob": 0.87962,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87962,
+          "max_prob": 0.88579
+        },
+        {
+          "sample_id": "X51005442386",
+          "label": "REAL",
+          "prob": 0.88878,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88878,
+          "max_prob": 0.89831
+        },
+        {
+          "sample_id": "X51005442394",
+          "label": "REAL",
+          "prob": 0.8126,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8126,
+          "max_prob": 0.8417
+        },
+        {
+          "sample_id": "X51006414470",
+          "label": "REAL",
+          "prob": 0.90749,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90749,
+          "max_prob": 0.92272
+        },
+        {
+          "sample_id": "X51006414483",
+          "label": "REAL",
+          "prob": 0.92587,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92587,
+          "max_prob": 0.92809
+        },
+        {
+          "sample_id": "X51006414592",
+          "label": "REAL",
+          "prob": 0.89502,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89502,
+          "max_prob": 0.92291
+        },
+        {
+          "sample_id": "X51006414633",
+          "label": "REAL",
+          "prob": 0.89879,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89879,
+          "max_prob": 0.91456
+        },
+        {
+          "sample_id": "X51006913061",
+          "label": "REAL",
+          "prob": 0.83776,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.83776,
+          "max_prob": 0.85597
+        },
+        {
+          "sample_id": "X51006913067",
+          "label": "REAL",
+          "prob": 0.89494,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89494,
+          "max_prob": 0.9375
+        },
+        {
+          "sample_id": "X51007231274",
+          "label": "REAL",
+          "prob": 0.9008,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9008,
+          "max_prob": 0.93125
+        },
+        {
+          "sample_id": "X51007231336",
+          "label": "REAL",
+          "prob": 0.83017,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.83017,
+          "max_prob": 0.84066
+        },
+        {
+          "sample_id": "X51005433514",
+          "label": "REAL",
+          "prob": 0.8225,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8225,
+          "max_prob": 0.82916
+        },
+        {
+          "sample_id": "X51005442375",
+          "label": "REAL",
+          "prob": 0.88952,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88952,
+          "max_prob": 0.91494
+        },
+        {
+          "sample_id": "X51006414593",
+          "label": "REAL",
+          "prob": 0.86789,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86789,
+          "max_prob": 0.88922
+        },
+        {
+          "sample_id": "X51006913023",
+          "label": "EDITED",
+          "prob": 0.87665,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87665,
+          "max_prob": 0.89811
+        },
+        {
+          "sample_id": "X51006913024",
+          "label": "EDITED",
+          "prob": 0.8855,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8855,
+          "max_prob": 0.89659
+        },
+        {
+          "sample_id": "X51006913028",
+          "label": "EDITED",
+          "prob": 0.87785,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87785,
+          "max_prob": 0.92983
+        },
+        {
+          "sample_id": "X51006913060",
+          "label": "REAL",
+          "prob": 0.83949,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.83949,
+          "max_prob": 0.84624
+        },
+        {
+          "sample_id": "X51007231341",
+          "label": "REAL",
+          "prob": 0.88811,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88811,
+          "max_prob": 0.9195
+        },
+        {
+          "sample_id": "X51007103692",
+          "label": "EDITED",
+          "prob": 0.8855,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8855,
+          "max_prob": 0.89308
+        },
+        {
+          "sample_id": "X51007339112",
+          "label": "EDITED",
+          "prob": 0.92795,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92795,
+          "max_prob": 0.94406
+        },
+        {
+          "sample_id": "X51006857071",
+          "label": "EDITED",
+          "prob": 0.86729,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86729,
+          "max_prob": 0.90874
+        },
+        {
+          "sample_id": "X51007231275",
+          "label": "EDITED",
+          "prob": 0.86182,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86182,
+          "max_prob": 0.8745
+        },
+        {
+          "sample_id": "X51005587254",
+          "label": "EDITED",
+          "prob": 0.96098,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96098,
+          "max_prob": 0.97031
+        },
+        {
+          "sample_id": "X51006555806",
+          "label": "EDITED",
+          "prob": 0.93176,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.93176,
+          "max_prob": 0.94635
+        },
+        {
+          "sample_id": "X51006401977",
+          "label": "EDITED",
+          "prob": 0.92758,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92758,
+          "max_prob": 0.94383
+        },
+        {
+          "sample_id": "X51005447850",
+          "label": "EDITED",
+          "prob": 0.9504,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9504,
+          "max_prob": 0.95922
+        },
+        {
+          "sample_id": "X51006619550",
+          "label": "EDITED",
+          "prob": 0.89816,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89816,
+          "max_prob": 0.91095
+        },
+        {
+          "sample_id": "X51005675914",
+          "label": "EDITED",
+          "prob": 0.95963,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95963,
+          "max_prob": 0.967
+        },
+        {
+          "sample_id": "X51007846321",
+          "label": "EDITED",
+          "prob": 0.8963,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8963,
+          "max_prob": 0.93751
+        },
+        {
+          "sample_id": "X51005719888",
+          "label": "EDITED",
+          "prob": 0.92957,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92957,
+          "max_prob": 0.94797
+        },
+        {
+          "sample_id": "X51005711404",
+          "label": "EDITED",
+          "prob": 0.89144,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89144,
+          "max_prob": 0.95922
+        },
+        {
+          "sample_id": "X51008114321",
+          "label": "EDITED",
+          "prob": 0.90104,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90104,
+          "max_prob": 0.92981
+        },
+        {
+          "sample_id": "X51006557117",
+          "label": "EDITED",
+          "prob": 0.95148,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95148,
+          "max_prob": 0.95579
+        },
+        {
+          "sample_id": "X00016469622",
+          "label": "EDITED",
+          "prob": 0.86152,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86152,
+          "max_prob": 0.9108
+        },
+        {
+          "sample_id": "X51005757304",
+          "label": "EDITED",
+          "prob": 0.96339,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96339,
+          "max_prob": 0.96784
+        },
+        {
+          "sample_id": "X51005365179",
+          "label": "EDITED",
+          "prob": 0.91445,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.91445,
+          "max_prob": 0.9596
+        },
+        {
+          "sample_id": "X51005757243",
+          "label": "EDITED",
+          "prob": 0.97786,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97786,
+          "max_prob": 0.98157
+        },
+        {
+          "sample_id": "X51005433553",
+          "label": "EDITED",
+          "prob": 0.89306,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89306,
+          "max_prob": 0.96888
+        },
+        {
+          "sample_id": "X51008099081",
+          "label": "EDITED",
+          "prob": 0.90169,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90169,
+          "max_prob": 0.9064
+        },
+        {
+          "sample_id": "X51006392167",
+          "label": "REAL",
+          "prob": 0.93465,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.93465,
+          "max_prob": 0.94224
+        },
+        {
+          "sample_id": "X51005676544",
+          "label": "REAL",
+          "prob": 0.96534,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96534,
+          "max_prob": 0.97292
+        },
+        {
+          "sample_id": "X51006557209",
+          "label": "REAL",
+          "prob": 0.94048,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94048,
+          "max_prob": 0.95638
+        },
+        {
+          "sample_id": "X51006387973",
+          "label": "REAL",
+          "prob": 0.91986,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.91986,
+          "max_prob": 0.94059
+        },
+        {
+          "sample_id": "X51006441474",
+          "label": "REAL",
+          "prob": 0.90584,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90584,
+          "max_prob": 0.91739
+        },
+        {
+          "sample_id": "X51006414599",
+          "label": "REAL",
+          "prob": 0.87113,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87113,
+          "max_prob": 0.8854
+        },
+        {
+          "sample_id": "X51005724623",
+          "label": "REAL",
+          "prob": 0.94322,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94322,
+          "max_prob": 0.95386
+        },
+        {
+          "sample_id": "X51006554833",
+          "label": "REAL",
+          "prob": 0.86286,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86286,
+          "max_prob": 0.87877
+        },
+        {
+          "sample_id": "X51006556806",
+          "label": "REAL",
+          "prob": 0.93693,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.93693,
+          "max_prob": 0.95552
+        },
+        {
+          "sample_id": "X51007391372",
+          "label": "REAL",
+          "prob": 0.70452,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.70452,
+          "max_prob": 0.74918
+        },
+        {
+          "sample_id": "X51006334926",
+          "label": "REAL",
+          "prob": 0.95892,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95892,
+          "max_prob": 0.96241
+        },
+        {
+          "sample_id": "X51006619842",
+          "label": "REAL",
+          "prob": 0.85225,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.85225,
+          "max_prob": 0.86798
+        },
+        {
+          "sample_id": "X51005719814",
+          "label": "REAL",
+          "prob": 0.94532,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94532,
+          "max_prob": 0.96385
+        },
+        {
+          "sample_id": "X51005675103",
+          "label": "REAL",
+          "prob": 0.91545,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.91545,
+          "max_prob": 0.93017
+        },
+        {
+          "sample_id": "X51005719856",
+          "label": "REAL",
+          "prob": 0.90942,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90942,
+          "max_prob": 0.91772
+        },
+        {
+          "sample_id": "X51008099046",
+          "label": "REAL",
+          "prob": 0.92014,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92014,
+          "max_prob": 0.92341
+        },
+        {
+          "sample_id": "X51006466070",
+          "label": "REAL",
+          "prob": 0.94663,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94663,
+          "max_prob": 0.95584
+        },
+        {
+          "sample_id": "X51006414512",
+          "label": "REAL",
+          "prob": 0.88325,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88325,
+          "max_prob": 0.9282
+        },
+        {
+          "sample_id": "X51005676536",
+          "label": "REAL",
+          "prob": 0.94889,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94889,
+          "max_prob": 0.95208
+        },
+        {
+          "sample_id": "X51006867435",
+          "label": "REAL",
+          "prob": 0.79513,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.79513,
+          "max_prob": 0.8902
+        },
+        {
+          "sample_id": "X51007339657",
+          "label": "REAL",
+          "prob": 0.76593,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.76593,
+          "max_prob": 0.86419
+        },
+        {
+          "sample_id": "X51006556730",
+          "label": "REAL",
+          "prob": 0.93494,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.93494,
+          "max_prob": 0.95555
+        },
+        {
+          "sample_id": "X51005806695",
+          "label": "REAL",
+          "prob": 0.97302,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97302,
+          "max_prob": 0.98299
+        },
+        {
+          "sample_id": "X00016469669",
+          "label": "REAL",
+          "prob": 0.92936,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92936,
+          "max_prob": 0.9434
+        },
+        {
+          "sample_id": "X51007339131",
+          "label": "REAL",
+          "prob": 0.96528,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96528,
+          "max_prob": 0.96854
+        },
+        {
+          "sample_id": "X51005757351",
+          "label": "REAL",
+          "prob": 0.97394,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97394,
+          "max_prob": 0.9818
+        },
+        {
+          "sample_id": "X51006619772",
+          "label": "REAL",
+          "prob": 0.95962,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95962,
+          "max_prob": 0.96338
+        },
+        {
+          "sample_id": "X51006389865",
+          "label": "REAL",
+          "prob": 0.94939,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94939,
+          "max_prob": 0.98157
+        },
+        {
+          "sample_id": "X51006008073",
+          "label": "REAL",
+          "prob": 0.9716,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9716,
+          "max_prob": 0.97627
+        },
+        {
+          "sample_id": "X51005663301",
+          "label": "REAL",
+          "prob": 0.90399,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90399,
+          "max_prob": 0.92069
+        },
+        {
+          "sample_id": "X51005605332",
+          "label": "REAL",
+          "prob": 0.92171,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92171,
+          "max_prob": 0.94411
+        },
+        {
+          "sample_id": "X51006679216",
+          "label": "REAL",
+          "prob": 0.96465,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96465,
+          "max_prob": 0.96744
+        },
+        {
+          "sample_id": "X51008099043",
+          "label": "REAL",
+          "prob": 0.86641,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86641,
+          "max_prob": 0.89675
+        },
+        {
+          "sample_id": "X51006414600",
+          "label": "REAL",
+          "prob": 0.8464,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8464,
+          "max_prob": 0.89702
+        },
+        {
+          "sample_id": "X51006389963",
+          "label": "REAL",
+          "prob": 0.91494,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.91494,
+          "max_prob": 0.96619
+        },
+        {
+          "sample_id": "X51006619779",
+          "label": "REAL",
+          "prob": 0.87538,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87538,
+          "max_prob": 0.92155
+        },
+        {
+          "sample_id": "X51006856981",
+          "label": "REAL",
+          "prob": 0.8685,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8685,
+          "max_prob": 0.89172
+        },
+        {
+          "sample_id": "X51005587267",
+          "label": "REAL",
+          "prob": 0.97663,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97663,
+          "max_prob": 0.97961
+        },
+        {
+          "sample_id": "X51005200938",
+          "label": "REAL",
+          "prob": 0.85338,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.85338,
+          "max_prob": 0.90315
+        },
+        {
+          "sample_id": "X51006557168",
+          "label": "REAL",
+          "prob": 0.91829,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.91829,
+          "max_prob": 0.94258
+        },
+        {
+          "sample_id": "X51006466065",
+          "label": "REAL",
+          "prob": 0.92952,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92952,
+          "max_prob": 0.94147
+        },
+        {
+          "sample_id": "X51007339094",
+          "label": "REAL",
+          "prob": 0.96167,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96167,
+          "max_prob": 0.96938
+        },
+        {
+          "sample_id": "X51006349081",
+          "label": "REAL",
+          "prob": 0.9433,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9433,
+          "max_prob": 0.98177
+        },
+        {
+          "sample_id": "X51006556610",
+          "label": "REAL",
+          "prob": 0.94803,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94803,
+          "max_prob": 0.97008
+        },
+        {
+          "sample_id": "X51005757308",
+          "label": "REAL",
+          "prob": 0.98333,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.98333,
+          "max_prob": 0.98612
+        },
+        {
+          "sample_id": "X51005663311",
+          "label": "REAL",
+          "prob": 0.89017,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89017,
+          "max_prob": 0.91362
+        },
+        {
+          "sample_id": "X51007846451",
+          "label": "REAL",
+          "prob": 0.89646,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89646,
+          "max_prob": 0.93037
+        },
+        {
+          "sample_id": "X51005453802",
+          "label": "REAL",
+          "prob": 0.92438,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92438,
+          "max_prob": 0.94191
+        },
+        {
+          "sample_id": "X51005711442",
+          "label": "REAL",
+          "prob": 0.88803,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88803,
+          "max_prob": 0.89968
+        },
+        {
+          "sample_id": "X51006619338",
+          "label": "REAL",
+          "prob": 0.81157,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.81157,
+          "max_prob": 0.8387
+        },
+        {
+          "sample_id": "X51005442376",
+          "label": "REAL",
+          "prob": 0.8241,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8241,
+          "max_prob": 0.89292
+        },
+        {
+          "sample_id": "X51006414427",
+          "label": "REAL",
+          "prob": 0.88915,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88915,
+          "max_prob": 0.89898
+        },
+        {
+          "sample_id": "X51006414429",
+          "label": "REAL",
+          "prob": 0.85941,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.85941,
+          "max_prob": 0.87439
+        },
+        {
+          "sample_id": "X51006328919",
+          "label": "REAL",
+          "prob": 0.86917,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86917,
+          "max_prob": 0.91951
+        },
+        {
+          "sample_id": "X51006329395",
+          "label": "REAL",
+          "prob": 0.92178,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92178,
+          "max_prob": 0.94961
+        },
+        {
+          "sample_id": "X51007846305",
+          "label": "REAL",
+          "prob": 0.85713,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.85713,
+          "max_prob": 0.86716
+        },
+        {
+          "sample_id": "X51008099089",
+          "label": "REAL",
+          "prob": 0.84085,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.84085,
+          "max_prob": 0.90404
+        },
+        {
+          "sample_id": "X51006414708",
+          "label": "REAL",
+          "prob": 0.86971,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86971,
+          "max_prob": 0.87656
+        },
+        {
+          "sample_id": "X51006502531",
+          "label": "REAL",
+          "prob": 0.92853,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92853,
+          "max_prob": 0.96593
+        },
+        {
+          "sample_id": "X51007846387",
+          "label": "REAL",
+          "prob": 0.89943,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89943,
+          "max_prob": 0.92419
+        },
+        {
+          "sample_id": "X51005757220",
+          "label": "REAL",
+          "prob": 0.97388,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97388,
+          "max_prob": 0.98009
+        },
+        {
+          "sample_id": "X51006857132",
+          "label": "REAL",
+          "prob": 0.9513,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9513,
+          "max_prob": 0.95686
+        },
+        {
+          "sample_id": "X51006912974",
+          "label": "REAL",
+          "prob": 0.89872,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89872,
+          "max_prob": 0.9063
+        },
+        {
+          "sample_id": "X51005757342",
+          "label": "REAL",
+          "prob": 0.96723,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96723,
+          "max_prob": 0.97507
+        },
+        {
+          "sample_id": "X51005719864",
+          "label": "REAL",
+          "prob": 0.91969,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.91969,
+          "max_prob": 0.92666
+        },
+        {
+          "sample_id": "X51006556839",
+          "label": "REAL",
+          "prob": 0.93891,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.93891,
+          "max_prob": 0.96298
+        },
+        {
+          "sample_id": "X51005719896",
+          "label": "REAL",
+          "prob": 0.75735,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.75735,
+          "max_prob": 0.8346
+        },
+        {
+          "sample_id": "X51006388069",
+          "label": "REAL",
+          "prob": 0.94051,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94051,
+          "max_prob": 0.94681
+        },
+        {
+          "sample_id": "X51005582745",
+          "label": "REAL",
+          "prob": 0.90547,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90547,
+          "max_prob": 0.91229
+        },
+        {
+          "sample_id": "X51006555814",
+          "label": "REAL",
+          "prob": 0.96058,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96058,
+          "max_prob": 0.97625
+        },
+        {
+          "sample_id": "X51006556740",
+          "label": "REAL",
+          "prob": 0.94313,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94313,
+          "max_prob": 0.96246
+        },
+        {
+          "sample_id": "X51005719893",
+          "label": "REAL",
+          "prob": 0.95756,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95756,
+          "max_prob": 0.98458
+        },
+        {
+          "sample_id": "X51007846360",
+          "label": "REAL",
+          "prob": 0.88985,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88985,
+          "max_prob": 0.90425
+        },
+        {
+          "sample_id": "X51007103702",
+          "label": "REAL",
+          "prob": 0.96012,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96012,
+          "max_prob": 0.9788
+        },
+        {
+          "sample_id": "X51008099084",
+          "label": "REAL",
+          "prob": 0.9196,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9196,
+          "max_prob": 0.95423
+        },
+        {
+          "sample_id": "X51006008091",
+          "label": "REAL",
+          "prob": 0.9698,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9698,
+          "max_prob": 0.97498
+        },
+        {
+          "sample_id": "X51009008091",
+          "label": "REAL",
+          "prob": 0.9698,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9698,
+          "max_prob": 0.97498
+        },
+        {
+          "sample_id": "X51005361898",
+          "label": "REAL",
+          "prob": 0.84693,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.84693,
+          "max_prob": 0.87971
+        },
+        {
+          "sample_id": "X51005442382",
+          "label": "REAL",
+          "prob": 0.75159,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.75159,
+          "max_prob": 0.7966
+        },
+        {
+          "sample_id": "X00016469676",
+          "label": "REAL",
+          "prob": 0.91572,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.91572,
+          "max_prob": 0.9336
+        },
+        {
+          "sample_id": "X51005746207",
+          "label": "REAL",
+          "prob": 0.90883,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90883,
+          "max_prob": 0.93435
+        },
+        {
+          "sample_id": "X51005268472",
+          "label": "REAL",
+          "prob": 0.96657,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96657,
+          "max_prob": 0.98143
+        },
+        {
+          "sample_id": "X51005745298",
+          "label": "REAL",
+          "prob": 0.92931,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92931,
+          "max_prob": 0.95039
+        },
+        {
+          "sample_id": "X51006556852",
+          "label": "REAL",
+          "prob": 0.93709,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.93709,
+          "max_prob": 0.94776
+        },
+        {
+          "sample_id": "X51008145504",
+          "label": "REAL",
+          "prob": 0.9446,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9446,
+          "max_prob": 0.96778
+        },
+        {
+          "sample_id": "X51006466778",
+          "label": "REAL",
+          "prob": 0.9392,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9392,
+          "max_prob": 0.96247
+        },
+        {
+          "sample_id": "X51008099073",
+          "label": "REAL",
+          "prob": 0.94325,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94325,
+          "max_prob": 0.94722
+        },
+        {
+          "sample_id": "X51006556654",
+          "label": "REAL",
+          "prob": 0.96807,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96807,
+          "max_prob": 0.97512
+        },
+        {
+          "sample_id": "X51005806703",
+          "label": "REAL",
+          "prob": 0.95815,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95815,
+          "max_prob": 0.96641
+        },
+        {
+          "sample_id": "X51006557508",
+          "label": "REAL",
+          "prob": 0.94395,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94395,
+          "max_prob": 0.97229
+        },
+        {
+          "sample_id": "X51005676537",
+          "label": "REAL",
+          "prob": 0.94398,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94398,
+          "max_prob": 0.96593
+        },
+        {
+          "sample_id": "X51006714066",
+          "label": "REAL",
+          "prob": 0.97243,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97243,
+          "max_prob": 0.98176
+        },
+        {
+          "sample_id": "X51005568884",
+          "label": "REAL",
+          "prob": 0.95987,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95987,
+          "max_prob": 0.97178
+        },
+        {
+          "sample_id": "X51005757273",
+          "label": "REAL",
+          "prob": 0.97878,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97878,
+          "max_prob": 0.98793
+        },
+        {
+          "sample_id": "X51005757248",
+          "label": "REAL",
+          "prob": 0.96202,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96202,
+          "max_prob": 0.96754
+        },
+        {
+          "sample_id": "X51005663280",
+          "label": "REAL",
+          "prob": 0.95064,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95064,
+          "max_prob": 0.95803
+        },
+        {
+          "sample_id": "X51006387740",
+          "label": "REAL",
+          "prob": 0.92153,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92153,
+          "max_prob": 0.92796
+        },
+        {
+          "sample_id": "X51006713996",
+          "label": "REAL",
+          "prob": 0.96484,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96484,
+          "max_prob": 0.98089
+        },
+        {
+          "sample_id": "X51006414675",
+          "label": "REAL",
+          "prob": 0.87404,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87404,
+          "max_prob": 0.90567
+        },
+        {
+          "sample_id": "X51007339156",
+          "label": "REAL",
+          "prob": 0.93259,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.93259,
+          "max_prob": 0.93377
+        },
+        {
+          "sample_id": "X51006328937",
+          "label": "REAL",
+          "prob": 0.90897,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90897,
+          "max_prob": 0.92739
+        },
+        {
+          "sample_id": "X51006329399",
+          "label": "REAL",
+          "prob": 0.90897,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90897,
+          "max_prob": 0.92739
+        },
+        {
+          "sample_id": "X51006619757",
+          "label": "REAL",
+          "prob": 0.84537,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.84537,
+          "max_prob": 0.89298
+        }
+      ]
+    },
+    "Pipeline C (Combined OCR+Morphology)": {
+      "accuracy": 0.1824,
+      "balanced_accuracy": 0.5081,
+      "macro_f1": 0.1622,
+      "weighted_f1": 0.076,
+      "real_precision": 1.0,
+      "real_recall": 0.0163,
+      "real_f1": 0.032,
+      "edited_precision": 0.1712,
+      "edited_recall": 1.0,
+      "edited_f1": 0.2924,
+      "roc_auc": 0.492,
+      "pr_auc": 0.1741,
+      "confusion_matrix": {
+        "TN": 2,
+        "FP": 121,
+        "FN": 0,
+        "TP": 25
+      },
+      "doc_predictions": [
+        {
+          "sample_id": "X51005433492",
+          "label": "REAL",
+          "prob": 0.85847,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.85847,
+          "max_prob": 0.89358
+        },
+        {
+          "sample_id": "X51005433538",
+          "label": "REAL",
+          "prob": 0.85856,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.85856,
+          "max_prob": 0.90663
+        },
+        {
+          "sample_id": "X51005433541",
+          "label": "REAL",
+          "prob": 0.78044,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.78044,
+          "max_prob": 0.78703
+        },
+        {
+          "sample_id": "X51005442334",
+          "label": "REAL",
+          "prob": 0.89133,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89133,
+          "max_prob": 0.90223
+        },
+        {
+          "sample_id": "X51005442379",
+          "label": "EDITED",
+          "prob": 0.85286,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.85286,
+          "max_prob": 0.87587
+        },
+        {
+          "sample_id": "X51005442384",
+          "label": "REAL",
+          "prob": 0.87962,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87962,
+          "max_prob": 0.88579
+        },
+        {
+          "sample_id": "X51005442386",
+          "label": "REAL",
+          "prob": 0.88878,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88878,
+          "max_prob": 0.89831
+        },
+        {
+          "sample_id": "X51005442394",
+          "label": "REAL",
+          "prob": 0.8126,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8126,
+          "max_prob": 0.8417
+        },
+        {
+          "sample_id": "X51006414470",
+          "label": "REAL",
+          "prob": 0.90749,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90749,
+          "max_prob": 0.92272
+        },
+        {
+          "sample_id": "X51006414483",
+          "label": "REAL",
+          "prob": 0.92587,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92587,
+          "max_prob": 0.92809
+        },
+        {
+          "sample_id": "X51006414592",
+          "label": "REAL",
+          "prob": 0.89502,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89502,
+          "max_prob": 0.92291
+        },
+        {
+          "sample_id": "X51006414633",
+          "label": "REAL",
+          "prob": 0.89879,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89879,
+          "max_prob": 0.91456
+        },
+        {
+          "sample_id": "X51006913061",
+          "label": "REAL",
+          "prob": 0.83776,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.83776,
+          "max_prob": 0.85597
+        },
+        {
+          "sample_id": "X51006913067",
+          "label": "REAL",
+          "prob": 0.89494,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89494,
+          "max_prob": 0.9375
+        },
+        {
+          "sample_id": "X51007231274",
+          "label": "REAL",
+          "prob": 0.9008,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9008,
+          "max_prob": 0.93125
+        },
+        {
+          "sample_id": "X51007231336",
+          "label": "REAL",
+          "prob": 0.83017,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.83017,
+          "max_prob": 0.84066
+        },
+        {
+          "sample_id": "X51005433514",
+          "label": "REAL",
+          "prob": 0.8225,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8225,
+          "max_prob": 0.82916
+        },
+        {
+          "sample_id": "X51005442375",
+          "label": "REAL",
+          "prob": 0.88952,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88952,
+          "max_prob": 0.91494
+        },
+        {
+          "sample_id": "X51006414593",
+          "label": "REAL",
+          "prob": 0.86789,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86789,
+          "max_prob": 0.88922
+        },
+        {
+          "sample_id": "X51006913023",
+          "label": "EDITED",
+          "prob": 0.87665,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87665,
+          "max_prob": 0.89811
+        },
+        {
+          "sample_id": "X51006913024",
+          "label": "EDITED",
+          "prob": 0.8855,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8855,
+          "max_prob": 0.89659
+        },
+        {
+          "sample_id": "X51006913028",
+          "label": "EDITED",
+          "prob": 0.87785,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87785,
+          "max_prob": 0.92983
+        },
+        {
+          "sample_id": "X51006913060",
+          "label": "REAL",
+          "prob": 0.83949,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.83949,
+          "max_prob": 0.84624
+        },
+        {
+          "sample_id": "X51007231341",
+          "label": "REAL",
+          "prob": 0.88811,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88811,
+          "max_prob": 0.9195
+        },
+        {
+          "sample_id": "X51007103692",
+          "label": "EDITED",
+          "prob": 0.89636,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89636,
+          "max_prob": 0.90306
+        },
+        {
+          "sample_id": "X51007339112",
+          "label": "EDITED",
+          "prob": 0.92706,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92706,
+          "max_prob": 0.94406
+        },
+        {
+          "sample_id": "X51006857071",
+          "label": "EDITED",
+          "prob": 0.8998,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8998,
+          "max_prob": 0.91954
+        },
+        {
+          "sample_id": "X51007231275",
+          "label": "EDITED",
+          "prob": 0.86182,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86182,
+          "max_prob": 0.8745
+        },
+        {
+          "sample_id": "X51005587254",
+          "label": "EDITED",
+          "prob": 0.96098,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96098,
+          "max_prob": 0.97031
+        },
+        {
+          "sample_id": "X51006555806",
+          "label": "EDITED",
+          "prob": 0.93176,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.93176,
+          "max_prob": 0.94635
+        },
+        {
+          "sample_id": "X51006401977",
+          "label": "EDITED",
+          "prob": 0.92758,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92758,
+          "max_prob": 0.94383
+        },
+        {
+          "sample_id": "X51005447850",
+          "label": "EDITED",
+          "prob": 0.9504,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9504,
+          "max_prob": 0.95922
+        },
+        {
+          "sample_id": "X51006619550",
+          "label": "EDITED",
+          "prob": 0.89816,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89816,
+          "max_prob": 0.91095
+        },
+        {
+          "sample_id": "X51005675914",
+          "label": "EDITED",
+          "prob": 0.9597,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9597,
+          "max_prob": 0.967
+        },
+        {
+          "sample_id": "X51007846321",
+          "label": "EDITED",
+          "prob": 0.8963,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8963,
+          "max_prob": 0.93751
+        },
+        {
+          "sample_id": "X51005719888",
+          "label": "EDITED",
+          "prob": 0.90806,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90806,
+          "max_prob": 0.92524
+        },
+        {
+          "sample_id": "X51005711404",
+          "label": "EDITED",
+          "prob": 0.84693,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.84693,
+          "max_prob": 0.85839
+        },
+        {
+          "sample_id": "X51008114321",
+          "label": "EDITED",
+          "prob": 0.92869,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92869,
+          "max_prob": 0.93788
+        },
+        {
+          "sample_id": "X51006557117",
+          "label": "EDITED",
+          "prob": 0.95395,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95395,
+          "max_prob": 0.95579
+        },
+        {
+          "sample_id": "X00016469622",
+          "label": "EDITED",
+          "prob": 0.86752,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86752,
+          "max_prob": 0.9108
+        },
+        {
+          "sample_id": "X51005757304",
+          "label": "EDITED",
+          "prob": 0.96954,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96954,
+          "max_prob": 0.972
+        },
+        {
+          "sample_id": "X51005365179",
+          "label": "EDITED",
+          "prob": 0.92219,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92219,
+          "max_prob": 0.9596
+        },
+        {
+          "sample_id": "X51005757243",
+          "label": "EDITED",
+          "prob": 0.9778,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9778,
+          "max_prob": 0.98157
+        },
+        {
+          "sample_id": "X51005433553",
+          "label": "EDITED",
+          "prob": 0.89306,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89306,
+          "max_prob": 0.96888
+        },
+        {
+          "sample_id": "X51008099081",
+          "label": "EDITED",
+          "prob": 0.90169,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90169,
+          "max_prob": 0.9064
+        },
+        {
+          "sample_id": "X51006392167",
+          "label": "REAL",
+          "prob": 0.93931,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.93931,
+          "max_prob": 0.94224
+        },
+        {
+          "sample_id": "X51005676544",
+          "label": "REAL",
+          "prob": 0.96196,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96196,
+          "max_prob": 0.97292
+        },
+        {
+          "sample_id": "X51006557209",
+          "label": "REAL",
+          "prob": 0.94048,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94048,
+          "max_prob": 0.95638
+        },
+        {
+          "sample_id": "X51006387973",
+          "label": "REAL",
+          "prob": 0.93907,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.93907,
+          "max_prob": 0.96071
+        },
+        {
+          "sample_id": "X51006441474",
+          "label": "REAL",
+          "prob": 0.92142,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92142,
+          "max_prob": 0.94299
+        },
+        {
+          "sample_id": "X51006414599",
+          "label": "REAL",
+          "prob": 0.87113,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87113,
+          "max_prob": 0.8854
+        },
+        {
+          "sample_id": "X51005724623",
+          "label": "REAL",
+          "prob": 0.94821,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94821,
+          "max_prob": 0.95386
+        },
+        {
+          "sample_id": "X51006554833",
+          "label": "REAL",
+          "prob": 0.86286,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86286,
+          "max_prob": 0.87877
+        },
+        {
+          "sample_id": "X51006556806",
+          "label": "REAL",
+          "prob": 0.91033,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.91033,
+          "max_prob": 0.93075
+        },
+        {
+          "sample_id": "X51007391372",
+          "label": "REAL",
+          "prob": 0.69896,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.69896,
+          "max_prob": 0.74918
+        },
+        {
+          "sample_id": "X51006334926",
+          "label": "REAL",
+          "prob": 0.94661,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94661,
+          "max_prob": 0.95979
+        },
+        {
+          "sample_id": "X51006619842",
+          "label": "REAL",
+          "prob": 0.83947,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.83947,
+          "max_prob": 0.85338
+        },
+        {
+          "sample_id": "X51005719814",
+          "label": "REAL",
+          "prob": 0.94532,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94532,
+          "max_prob": 0.96385
+        },
+        {
+          "sample_id": "X51005675103",
+          "label": "REAL",
+          "prob": 0.94818,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94818,
+          "max_prob": 0.96112
+        },
+        {
+          "sample_id": "X51005719856",
+          "label": "REAL",
+          "prob": 0.91139,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.91139,
+          "max_prob": 0.91772
+        },
+        {
+          "sample_id": "X51008099046",
+          "label": "REAL",
+          "prob": 0.91109,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.91109,
+          "max_prob": 0.92341
+        },
+        {
+          "sample_id": "X51006466070",
+          "label": "REAL",
+          "prob": 0.94663,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94663,
+          "max_prob": 0.95584
+        },
+        {
+          "sample_id": "X51006414512",
+          "label": "REAL",
+          "prob": 0.88325,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88325,
+          "max_prob": 0.9282
+        },
+        {
+          "sample_id": "X51005676536",
+          "label": "REAL",
+          "prob": 0.94474,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94474,
+          "max_prob": 0.95172
+        },
+        {
+          "sample_id": "X51006867435",
+          "label": "REAL",
+          "prob": 0.79513,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.79513,
+          "max_prob": 0.8902
+        },
+        {
+          "sample_id": "X51007339657",
+          "label": "REAL",
+          "prob": 0.76593,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.76593,
+          "max_prob": 0.86419
+        },
+        {
+          "sample_id": "X51006556730",
+          "label": "REAL",
+          "prob": 0.93494,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.93494,
+          "max_prob": 0.95555
+        },
+        {
+          "sample_id": "X51005806695",
+          "label": "REAL",
+          "prob": 0.9526,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9526,
+          "max_prob": 0.96864
+        },
+        {
+          "sample_id": "X00016469669",
+          "label": "REAL",
+          "prob": 0.92936,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92936,
+          "max_prob": 0.9434
+        },
+        {
+          "sample_id": "X51007339131",
+          "label": "REAL",
+          "prob": 0.96244,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96244,
+          "max_prob": 0.96854
+        },
+        {
+          "sample_id": "X51005757351",
+          "label": "REAL",
+          "prob": 0.9715,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9715,
+          "max_prob": 0.9818
+        },
+        {
+          "sample_id": "X51006619772",
+          "label": "REAL",
+          "prob": 0.95782,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95782,
+          "max_prob": 0.96338
+        },
+        {
+          "sample_id": "X51006389865",
+          "label": "REAL",
+          "prob": 0.94939,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94939,
+          "max_prob": 0.98157
+        },
+        {
+          "sample_id": "X51006008073",
+          "label": "REAL",
+          "prob": 0.9709,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9709,
+          "max_prob": 0.97627
+        },
+        {
+          "sample_id": "X51005663301",
+          "label": "REAL",
+          "prob": 0.92394,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92394,
+          "max_prob": 0.94627
+        },
+        {
+          "sample_id": "X51005605332",
+          "label": "REAL",
+          "prob": 0.92171,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92171,
+          "max_prob": 0.94411
+        },
+        {
+          "sample_id": "X51006679216",
+          "label": "REAL",
+          "prob": 0.96465,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96465,
+          "max_prob": 0.96744
+        },
+        {
+          "sample_id": "X51008099043",
+          "label": "REAL",
+          "prob": 0.92937,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92937,
+          "max_prob": 0.98144
+        },
+        {
+          "sample_id": "X51006414600",
+          "label": "REAL",
+          "prob": 0.8464,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8464,
+          "max_prob": 0.89702
+        },
+        {
+          "sample_id": "X51006389963",
+          "label": "REAL",
+          "prob": 0.92394,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92394,
+          "max_prob": 0.96619
+        },
+        {
+          "sample_id": "X51006619779",
+          "label": "REAL",
+          "prob": 0.87838,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87838,
+          "max_prob": 0.92155
+        },
+        {
+          "sample_id": "X51006856981",
+          "label": "REAL",
+          "prob": 0.863,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.863,
+          "max_prob": 0.89172
+        },
+        {
+          "sample_id": "X51005587267",
+          "label": "REAL",
+          "prob": 0.97663,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97663,
+          "max_prob": 0.97961
+        },
+        {
+          "sample_id": "X51005200938",
+          "label": "REAL",
+          "prob": 0.82827,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.82827,
+          "max_prob": 0.82912
+        },
+        {
+          "sample_id": "X51006557168",
+          "label": "REAL",
+          "prob": 0.92346,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92346,
+          "max_prob": 0.95809
+        },
+        {
+          "sample_id": "X51006466065",
+          "label": "REAL",
+          "prob": 0.92952,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92952,
+          "max_prob": 0.94147
+        },
+        {
+          "sample_id": "X51007339094",
+          "label": "REAL",
+          "prob": 0.96167,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96167,
+          "max_prob": 0.96938
+        },
+        {
+          "sample_id": "X51006349081",
+          "label": "REAL",
+          "prob": 0.9384,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9384,
+          "max_prob": 0.98177
+        },
+        {
+          "sample_id": "X51006556610",
+          "label": "REAL",
+          "prob": 0.96679,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96679,
+          "max_prob": 0.97298
+        },
+        {
+          "sample_id": "X51005757308",
+          "label": "REAL",
+          "prob": 0.98333,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.98333,
+          "max_prob": 0.98612
+        },
+        {
+          "sample_id": "X51005663311",
+          "label": "REAL",
+          "prob": 0.88713,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88713,
+          "max_prob": 0.88989
+        },
+        {
+          "sample_id": "X51007846451",
+          "label": "REAL",
+          "prob": 0.89646,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89646,
+          "max_prob": 0.93037
+        },
+        {
+          "sample_id": "X51005453802",
+          "label": "REAL",
+          "prob": 0.87853,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87853,
+          "max_prob": 0.95444
+        },
+        {
+          "sample_id": "X51005711442",
+          "label": "REAL",
+          "prob": 0.89743,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89743,
+          "max_prob": 0.90919
+        },
+        {
+          "sample_id": "X51006619338",
+          "label": "REAL",
+          "prob": 0.81231,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.81231,
+          "max_prob": 0.82783
+        },
+        {
+          "sample_id": "X51005442376",
+          "label": "REAL",
+          "prob": 0.8241,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.8241,
+          "max_prob": 0.89292
+        },
+        {
+          "sample_id": "X51006414427",
+          "label": "REAL",
+          "prob": 0.88915,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88915,
+          "max_prob": 0.89898
+        },
+        {
+          "sample_id": "X51006414429",
+          "label": "REAL",
+          "prob": 0.85941,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.85941,
+          "max_prob": 0.87439
+        },
+        {
+          "sample_id": "X51006328919",
+          "label": "REAL",
+          "prob": 0.65745,
+          "pred": 0,
+          "num_cands": 30,
+          "top3_mean": 0.65745,
+          "max_prob": 0.68456
+        },
+        {
+          "sample_id": "X51006329395",
+          "label": "REAL",
+          "prob": 0.84014,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.84014,
+          "max_prob": 0.94961
+        },
+        {
+          "sample_id": "X51007846305",
+          "label": "REAL",
+          "prob": 0.85713,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.85713,
+          "max_prob": 0.86716
+        },
+        {
+          "sample_id": "X51008099089",
+          "label": "REAL",
+          "prob": 0.88228,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88228,
+          "max_prob": 0.92182
+        },
+        {
+          "sample_id": "X51006414708",
+          "label": "REAL",
+          "prob": 0.86971,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.86971,
+          "max_prob": 0.87656
+        },
+        {
+          "sample_id": "X51006502531",
+          "label": "REAL",
+          "prob": 0.90793,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.90793,
+          "max_prob": 0.93984
+        },
+        {
+          "sample_id": "X51007846387",
+          "label": "REAL",
+          "prob": 0.89943,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89943,
+          "max_prob": 0.92419
+        },
+        {
+          "sample_id": "X51005757220",
+          "label": "REAL",
+          "prob": 0.97388,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97388,
+          "max_prob": 0.98009
+        },
+        {
+          "sample_id": "X51006857132",
+          "label": "REAL",
+          "prob": 0.9513,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9513,
+          "max_prob": 0.95686
+        },
+        {
+          "sample_id": "X51006912974",
+          "label": "REAL",
+          "prob": 0.89872,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89872,
+          "max_prob": 0.9063
+        },
+        {
+          "sample_id": "X51005757342",
+          "label": "REAL",
+          "prob": 0.9669,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9669,
+          "max_prob": 0.98291
+        },
+        {
+          "sample_id": "X51005719864",
+          "label": "REAL",
+          "prob": 0.91969,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.91969,
+          "max_prob": 0.92666
+        },
+        {
+          "sample_id": "X51006556839",
+          "label": "REAL",
+          "prob": 0.95232,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95232,
+          "max_prob": 0.96298
+        },
+        {
+          "sample_id": "X51005719896",
+          "label": "REAL",
+          "prob": 0.75735,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.75735,
+          "max_prob": 0.8346
+        },
+        {
+          "sample_id": "X51006388069",
+          "label": "REAL",
+          "prob": 0.94051,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94051,
+          "max_prob": 0.94681
+        },
+        {
+          "sample_id": "X51005582745",
+          "label": "REAL",
+          "prob": 0.89841,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89841,
+          "max_prob": 0.91229
+        },
+        {
+          "sample_id": "X51006555814",
+          "label": "REAL",
+          "prob": 0.96058,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96058,
+          "max_prob": 0.97625
+        },
+        {
+          "sample_id": "X51006556740",
+          "label": "REAL",
+          "prob": 0.95152,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95152,
+          "max_prob": 0.96246
+        },
+        {
+          "sample_id": "X51005719893",
+          "label": "REAL",
+          "prob": 0.95756,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95756,
+          "max_prob": 0.98458
+        },
+        {
+          "sample_id": "X51007846360",
+          "label": "REAL",
+          "prob": 0.88985,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.88985,
+          "max_prob": 0.90425
+        },
+        {
+          "sample_id": "X51007103702",
+          "label": "REAL",
+          "prob": 0.96012,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96012,
+          "max_prob": 0.9788
+        },
+        {
+          "sample_id": "X51008099084",
+          "label": "REAL",
+          "prob": 0.9196,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9196,
+          "max_prob": 0.95423
+        },
+        {
+          "sample_id": "X51006008091",
+          "label": "REAL",
+          "prob": 0.97328,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97328,
+          "max_prob": 0.97633
+        },
+        {
+          "sample_id": "X51009008091",
+          "label": "REAL",
+          "prob": 0.97328,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97328,
+          "max_prob": 0.97633
+        },
+        {
+          "sample_id": "X51005361898",
+          "label": "REAL",
+          "prob": 0.89345,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89345,
+          "max_prob": 0.9136
+        },
+        {
+          "sample_id": "X51005442382",
+          "label": "REAL",
+          "prob": 0.75159,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.75159,
+          "max_prob": 0.7966
+        },
+        {
+          "sample_id": "X00016469676",
+          "label": "REAL",
+          "prob": 0.9027,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9027,
+          "max_prob": 0.9336
+        },
+        {
+          "sample_id": "X51005746207",
+          "label": "REAL",
+          "prob": 0.82961,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.82961,
+          "max_prob": 0.86047
+        },
+        {
+          "sample_id": "X51005268472",
+          "label": "REAL",
+          "prob": 0.97111,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97111,
+          "max_prob": 0.98143
+        },
+        {
+          "sample_id": "X51005745298",
+          "label": "REAL",
+          "prob": 0.92931,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92931,
+          "max_prob": 0.95039
+        },
+        {
+          "sample_id": "X51006556852",
+          "label": "REAL",
+          "prob": 0.94806,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94806,
+          "max_prob": 0.95926
+        },
+        {
+          "sample_id": "X51008145504",
+          "label": "REAL",
+          "prob": 0.9446,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9446,
+          "max_prob": 0.96778
+        },
+        {
+          "sample_id": "X51006466778",
+          "label": "REAL",
+          "prob": 0.9392,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9392,
+          "max_prob": 0.96247
+        },
+        {
+          "sample_id": "X51008099073",
+          "label": "REAL",
+          "prob": 0.94325,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94325,
+          "max_prob": 0.94722
+        },
+        {
+          "sample_id": "X51006556654",
+          "label": "REAL",
+          "prob": 0.96807,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.96807,
+          "max_prob": 0.97512
+        },
+        {
+          "sample_id": "X51005806703",
+          "label": "REAL",
+          "prob": 0.93622,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.93622,
+          "max_prob": 0.93775
+        },
+        {
+          "sample_id": "X51006557508",
+          "label": "REAL",
+          "prob": 0.94818,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94818,
+          "max_prob": 0.97229
+        },
+        {
+          "sample_id": "X51005676537",
+          "label": "REAL",
+          "prob": 0.94657,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94657,
+          "max_prob": 0.96593
+        },
+        {
+          "sample_id": "X51006714066",
+          "label": "REAL",
+          "prob": 0.97243,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97243,
+          "max_prob": 0.98176
+        },
+        {
+          "sample_id": "X51005568884",
+          "label": "REAL",
+          "prob": 0.94664,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.94664,
+          "max_prob": 0.96842
+        },
+        {
+          "sample_id": "X51005757273",
+          "label": "REAL",
+          "prob": 0.97878,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.97878,
+          "max_prob": 0.98793
+        },
+        {
+          "sample_id": "X51005757248",
+          "label": "REAL",
+          "prob": 0.9632,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9632,
+          "max_prob": 0.96754
+        },
+        {
+          "sample_id": "X51005663280",
+          "label": "REAL",
+          "prob": 0.95064,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.95064,
+          "max_prob": 0.95803
+        },
+        {
+          "sample_id": "X51006387740",
+          "label": "REAL",
+          "prob": 0.91069,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.91069,
+          "max_prob": 0.92747
+        },
+        {
+          "sample_id": "X51006713996",
+          "label": "REAL",
+          "prob": 0.9549,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.9549,
+          "max_prob": 0.95955
+        },
+        {
+          "sample_id": "X51006414675",
+          "label": "REAL",
+          "prob": 0.87404,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.87404,
+          "max_prob": 0.90567
+        },
+        {
+          "sample_id": "X51007339156",
+          "label": "REAL",
+          "prob": 0.89776,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.89776,
+          "max_prob": 0.93033
+        },
+        {
+          "sample_id": "X51006328937",
+          "label": "REAL",
+          "prob": 0.92156,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92156,
+          "max_prob": 0.92739
+        },
+        {
+          "sample_id": "X51006329399",
+          "label": "REAL",
+          "prob": 0.92156,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.92156,
+          "max_prob": 0.92739
+        },
+        {
+          "sample_id": "X51006619757",
+          "label": "REAL",
+          "prob": 0.84537,
+          "pred": 1,
+          "num_cands": 30,
+          "top3_mean": 0.84537,
+          "max_prob": 0.89298
+        }
+      ]
+    }
+  },
+  "region_error_taxonomy": {
+    "ocr_finds_model_detects": 0,
+    "ocr_finds_model_misses": 24,
+    "morph_finds_ocr_misses_model_detects": 1,
+    "morph_finds_ocr_misses_model_misses": 1,
+    "both_find_model_detects": 1,
+    "neither_finds": 52
+  },
+  "evaluation_time_seconds": 47.86,
+  "ms_per_doc_pipeline": 107.78,
+  "total_test_documents": 148,
+  "total_test_gt_boxes": 86
+}
