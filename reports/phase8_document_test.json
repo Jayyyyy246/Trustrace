@@ -1,0 +1,205 @@
+{
+  "pipeline_results": {
+    "Phase 6 Frozen Baseline (OCR)": {
+      "accuracy": 0.7568,
+      "balanced_accuracy": 0.4712,
+      "macro_f1": 0.4565,
+      "real_specificity": 0.9024,
+      "real_precision": 0.8222,
+      "real_f1": 0.8605,
+      "edited_recall": 0.04,
+      "edited_precision": 0.0769,
+      "edited_f1": 0.0526,
+      "roc_auc": 0.4725,
+      "pr_auc": 0.1608,
+      "confusion_matrix": {
+        "TN": 111,
+        "FP": 12,
+        "FN": 24,
+        "TP": 1
+      }
+    },
+    "Phase 6 Frozen Baseline (MORPHOLOGY)": {
+      "accuracy": 0.1689,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.1445,
+      "real_specificity": 0.0,
+      "real_precision": 0.0,
+      "real_f1": 0.0,
+      "edited_recall": 1.0,
+      "edited_precision": 0.1689,
+      "edited_f1": 0.289,
+      "roc_auc": 0.4751,
+      "pr_auc": 0.1674,
+      "confusion_matrix": {
+        "TN": 0,
+        "FP": 123,
+        "FN": 0,
+        "TP": 25
+      }
+    },
+    "Phase 6 Frozen Baseline (COMBINED)": {
+      "accuracy": 0.1689,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.1445,
+      "real_specificity": 0.0,
+      "real_precision": 0.0,
+      "real_f1": 0.0,
+      "edited_recall": 1.0,
+      "edited_precision": 0.1689,
+      "edited_f1": 0.289,
+      "roc_auc": 0.492,
+      "pr_auc": 0.1741,
+      "confusion_matrix": {
+        "TN": 0,
+        "FP": 123,
+        "FN": 0,
+        "TP": 25
+      }
+    },
+    "Phase 8 Compact CNN (OCR)": {
+      "accuracy": 0.6554,
+      "balanced_accuracy": 0.5059,
+      "macro_f1": 0.4973,
+      "real_specificity": 0.7317,
+      "real_precision": 0.8333,
+      "real_f1": 0.7792,
+      "edited_recall": 0.28,
+      "edited_precision": 0.175,
+      "edited_f1": 0.2154,
+      "roc_auc": 0.5083,
+      "pr_auc": 0.1791,
+      "confusion_matrix": {
+        "TN": 90,
+        "FP": 33,
+        "FN": 18,
+        "TP": 7
+      }
+    },
+    "Phase 8 Compact CNN (MORPHOLOGY)": {
+      "accuracy": 0.6081,
+      "balanced_accuracy": 0.4455,
+      "macro_f1": 0.4463,
+      "real_specificity": 0.6911,
+      "real_precision": 0.8095,
+      "real_f1": 0.7456,
+      "edited_recall": 0.2,
+      "edited_precision": 0.1163,
+      "edited_f1": 0.1471,
+      "roc_auc": 0.4228,
+      "pr_auc": 0.1537,
+      "confusion_matrix": {
+        "TN": 85,
+        "FP": 38,
+        "FN": 20,
+        "TP": 5
+      }
+    },
+    "Phase 8 Compact CNN (COMBINED)": {
+      "accuracy": 0.6014,
+      "balanced_accuracy": 0.4574,
+      "macro_f1": 0.4534,
+      "real_specificity": 0.6748,
+      "real_precision": 0.8137,
+      "real_f1": 0.7378,
+      "edited_recall": 0.24,
+      "edited_precision": 0.1304,
+      "edited_f1": 0.169,
+      "roc_auc": 0.4361,
+      "pr_auc": 0.167,
+      "confusion_matrix": {
+        "TN": 83,
+        "FP": 40,
+        "FN": 19,
+        "TP": 6
+      }
+    },
+    "Phase 8 Candidate-Aware Doc-PatchFormer (OCR)": {
+      "accuracy": 0.4054,
+      "balanced_accuracy": 0.5307,
+      "macro_f1": 0.3893,
+      "real_specificity": 0.3415,
+      "real_precision": 0.8571,
+      "real_f1": 0.4884,
+      "edited_recall": 0.72,
+      "edited_precision": 0.1818,
+      "edited_f1": 0.2903,
+      "roc_auc": 0.5008,
+      "pr_auc": 0.1707,
+      "confusion_matrix": {
+        "TN": 42,
+        "FP": 81,
+        "FN": 7,
+        "TP": 18
+      }
+    },
+    "Phase 8 Candidate-Aware Doc-PatchFormer (MORPHOLOGY)": {
+      "accuracy": 0.2635,
+      "balanced_accuracy": 0.5569,
+      "macro_f1": 0.2594,
+      "real_specificity": 0.1138,
+      "real_precision": 1.0,
+      "real_f1": 0.2044,
+      "edited_recall": 1.0,
+      "edited_precision": 0.1866,
+      "edited_f1": 0.3145,
+      "roc_auc": 0.478,
+      "pr_auc": 0.1642,
+      "confusion_matrix": {
+        "TN": 14,
+        "FP": 109,
+        "FN": 0,
+        "TP": 25
+      }
+    },
+    "Phase 8 Candidate-Aware Doc-PatchFormer (COMBINED)": {
+      "accuracy": 0.25,
+      "balanced_accuracy": 0.5169,
+      "macro_f1": 0.2472,
+      "real_specificity": 0.1138,
+      "real_precision": 0.875,
+      "real_f1": 0.2014,
+      "edited_recall": 0.92,
+      "edited_precision": 0.1742,
+      "edited_f1": 0.293,
+      "roc_auc": 0.4738,
+      "pr_auc": 0.1729,
+      "confusion_matrix": {
+        "TN": 14,
+        "FP": 109,
+        "FN": 2,
+        "TP": 23
+      }
+    }
+  },
+  "two_stage_funnels": {
+    "Phase 6 Frozen Baseline": {
+      "total_gt_regions": 86,
+      "stage1_discovered": 2,
+      "stage1_discovery_rate": 0.0233,
+      "stage2_classified": 2,
+      "stage2_success_rate": 1.0,
+      "final_region_recall": 0.0233
+    },
+    "Phase 8 Compact CNN": {
+      "total_gt_regions": 86,
+      "stage1_discovered": 2,
+      "stage1_discovery_rate": 0.0233,
+      "stage2_classified": 1,
+      "stage2_success_rate": 0.5,
+      "final_region_recall": 0.0116
+    },
+    "Phase 8 Candidate-Aware Doc-PatchFormer": {
+      "total_gt_regions": 86,
+      "stage1_discovered": 2,
+      "stage1_discovery_rate": 0.0233,
+      "stage2_classified": 2,
+      "stage2_success_rate": 1.0,
+      "final_region_recall": 0.0233
+    }
+  },
+  "locked_threshold": 0.65,
+  "total_test_documents": 148,
+  "total_test_gt_boxes": 86,
+  "evaluation_time_seconds": 145.46
+}

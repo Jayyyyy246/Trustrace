@@ -1,0 +1,14 @@
+{
+  "Frozen Phase 6 Doc-PatchFormer": {
+    "brier_score": 0.4223,
+    "ece": 0.4508
+  },
+  "Phase 8 Compact CNN": {
+    "brier_score": 0.1658,
+    "ece": 0.198
+  },
+  "Phase 8 Candidate-Aware Doc-PatchFormer": {
+    "brier_score": 0.1825,
+    "ece": 0.224
+  }
+}

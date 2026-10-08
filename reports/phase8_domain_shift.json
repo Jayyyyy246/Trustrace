@@ -1,0 +1,46 @@
+{
+  "phase6_ocr_geometry": {
+    "width_median": 58.0,
+    "width_mean": 79.8,
+    "height_median": 28.0,
+    "height_mean": 36.0,
+    "area_median": 1633.0,
+    "area_mean": 8177.2,
+    "aspect_ratio_median": 2.19,
+    "aspect_ratio_mean": 2.44
+  },
+  "phase7_morphology_geometry": {
+    "width_median": 21.0,
+    "width_mean": 43.0,
+    "height_median": 18.0,
+    "height_mean": 21.3,
+    "area_median": 396.0,
+    "area_mean": 1398.2,
+    "aspect_ratio_median": 1.2,
+    "aspect_ratio_mean": 1.94
+  },
+  "phase7_ocr_geometry": {
+    "width_median": 81.0,
+    "width_mean": 130.0,
+    "height_median": 27.0,
+    "height_mean": 30.5,
+    "area_median": 2162.0,
+    "area_mean": 4912.7,
+    "aspect_ratio_median": 2.94,
+    "aspect_ratio_mean": 4.21
+  },
+  "pixel_statistics": {
+    "phase6_ocr_patches": {
+      "brightness_mean": 225.0,
+      "brightness_std": 17.3,
+      "contrast_mean": 48.8,
+      "edge_density_mean": 1150.8
+    },
+    "estimated_morphology_characteristics": {
+      "brightness_mean": 218.4,
+      "contrast_mean": 48.6,
+      "edge_density_mean": 612.8,
+      "divergence_ratio": 2.41
+    }
+  }
+}

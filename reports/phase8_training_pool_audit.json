@@ -1,0 +1,73 @@
+{
+  "total_candidates": 166192,
+  "source_breakdown": {
+    "OCR": 116866,
+    "MORPHOLOGY": 49326
+  },
+  "split_breakdown": {
+    "train": 116558,
+    "val": 24710,
+    "test": 24924
+  },
+  "documents_with_candidates": 987,
+  "edited_documents_represented": 162,
+  "real_documents_represented": 825,
+  "mean_candidates_per_doc": 168.4,
+  "median_candidates_per_doc": 167.0,
+  "label_distribution": {
+    "positive_count": 312,
+    "positive_share": 0.0019,
+    "negative_count": 165478,
+    "negative_share": 0.9957,
+    "ambiguous_count": 402,
+    "ambiguous_share": 0.0024
+  },
+  "positives_by_source": {
+    "OCR": 247,
+    "MORPHOLOGY": 65
+  },
+  "negatives_by_source": {
+    "OCR": 116303,
+    "MORPHOLOGY": 49175
+  },
+  "ambiguous_by_source": {
+    "OCR": 316,
+    "MORPHOLOGY": 86
+  },
+  "split_label_stats": {
+    "train": {
+      "negative": 116063,
+      "positive": 217,
+      "ambiguous": 278
+    },
+    "val": {
+      "negative": 24600,
+      "ambiguous": 63,
+      "positive": 47
+    },
+    "test": {
+      "negative": 24815,
+      "ambiguous": 61,
+      "positive": 48
+    }
+  },
+  "dimensions": {
+    "width_median": 62.0,
+    "width_mean": 104.4,
+    "height_median": 25.0,
+    "height_mean": 27.6,
+    "area_median": 1550.0,
+    "area_mean": 3895.2,
+    "aspect_ratio_median": 2.43
+  },
+  "scores": {
+    "score_median": 125.0,
+    "score_mean": 143.44,
+    "score_min": 45.13,
+    "score_max": 253.76
+  },
+  "thresholds_used": {
+    "iou_pos_threshold": 0.25,
+    "iou_neg_threshold": 0.05
+  }
+}
