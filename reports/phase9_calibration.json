@@ -1,0 +1,47 @@
+{
+  "validation_comparison": {
+    "Uncalibrated": {
+      "ece": 0.1978,
+      "brier": 0.175,
+      "nll": 0.5245
+    },
+    "Temperature_Scaling": {
+      "optimal_T": 0.7177,
+      "ece": 0.1749,
+      "brier": 0.1717,
+      "nll": 0.5153
+    },
+    "Platt_Scaling": {
+      "coef": 1.0842,
+      "intercept": -1.1637,
+      "ece": 0.0454,
+      "brier": 0.1326,
+      "nll": 0.4159
+    },
+    "Isotonic_Regression": {
+      "ece": 0.0,
+      "brier": 0.1258,
+      "nll": 0.394
+    }
+  },
+  "selected_best_method": "Isotonic Regression",
+  "optimal_temperature_T": 0.7177,
+  "test_evaluation": {
+    "Uncalibrated": {
+      "ece": 0.198,
+      "brier": 0.1658
+    },
+    "Temperature_Scaling": {
+      "ece": 0.1754,
+      "brier": 0.1625
+    },
+    "Platt_Scaling": {
+      "ece": 0.0496,
+      "brier": 0.1257
+    },
+    "Isotonic_Regression": {
+      "ece": 0.0413,
+      "brier": 0.1272
+    }
+  }
+}

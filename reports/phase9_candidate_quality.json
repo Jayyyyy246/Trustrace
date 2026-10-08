@@ -1,0 +1,44 @@
+{
+  "total_audited_candidates": 4576,
+  "quality_score_mean": 0.7024,
+  "quality_score_std": 0.139,
+  "quality_score_min": 0.3102,
+  "quality_score_max": 0.9989,
+  "quality_forgery_correlation_pearson_r": 0.1598,
+  "positive_candidate_quality_mean": 0.7148,
+  "negative_candidate_quality_mean": 0.6991,
+  "uncertainty_margin_mean": 0.5964,
+  "entropy_mean": 0.8114,
+  "quantile_fpr_on_authentic": {
+    "Low Quality (< Q25)": {
+      "count": 900,
+      "false_positives": 195,
+      "fpr": 21.67
+    },
+    "Medium-Low (Q25 - Q50)": {
+      "count": 901,
+      "false_positives": 161,
+      "fpr": 17.87
+    },
+    "Medium-High (Q50 - Q75)": {
+      "count": 899,
+      "false_positives": 212,
+      "fpr": 23.58
+    },
+    "High Quality (> Q75)": {
+      "count": 900,
+      "false_positives": 264,
+      "fpr": 29.33
+    }
+  },
+  "source_breakdown": {
+    "OCR": {
+      "count": 1875,
+      "mean_quality": 0.8145
+    },
+    "MORPHOLOGY": {
+      "count": 2037,
+      "mean_quality": 0.6096
+    }
+  }
+}

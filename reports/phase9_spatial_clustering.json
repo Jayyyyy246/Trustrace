@@ -1,0 +1,28 @@
+{
+  "total_clusters_analyzed": 924,
+  "isolated_clusters_count": 713,
+  "multi_candidate_clusters_count": 211,
+  "cluster_size_distribution": {
+    "size_1": 713,
+    "size_2": 108,
+    "size_3_to_5": 75,
+    "size_6_plus": 28
+  },
+  "isolated_vs_clustered_comparison": {
+    "isolated": {
+      "total_count": 713,
+      "tp": 16,
+      "fp": 207,
+      "precision": 0.0717,
+      "fpr": 0.3
+    },
+    "clustered": {
+      "total_count": 211,
+      "tp": 59,
+      "fp": 44,
+      "precision": 0.5728,
+      "fpr": 0.3077
+    }
+  },
+  "forensic_conclusion": "Spatial clustering provides an informative precision boost: clustered candidates have higher precision and lower false-alarm density than isolated singletons."
+}
