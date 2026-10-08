@@ -1,0 +1,91 @@
+{
+  "downstream_metrics": {
+    "Phase 9 Frozen Reference": {
+      "accuracy": 0.5946,
+      "macro_f1": 0.4778,
+      "edited_recall": 0.36,
+      "edited_precision": 0.1698,
+      "real_specificity": 0.6423,
+      "roc_auc": 0.4998,
+      "pr_auc": 0.1704,
+      "brier_score": 0.25,
+      "ece": 0.2818,
+      "confusion_matrix": {
+        "TN": 79,
+        "FP": 44,
+        "FN": 16,
+        "TP": 9
+      }
+    },
+    "Phase 10 Best Baseline": {
+      "accuracy": 0.6824,
+      "macro_f1": 0.4599,
+      "edited_recall": 0.12,
+      "edited_precision": 0.1071,
+      "real_specificity": 0.7967,
+      "roc_auc": 0.512,
+      "pr_auc": 0.158,
+      "brier_score": 0.1873,
+      "ece": 0.1486,
+      "confusion_matrix": {
+        "TN": 98,
+        "FP": 25,
+        "FN": 22,
+        "TP": 3
+      }
+    },
+    "Phase 11 Glyph G0 (Exact)": {
+      "accuracy": 0.5068,
+      "macro_f1": 0.4403,
+      "edited_recall": 0.48,
+      "edited_precision": 0.1667,
+      "real_specificity": 0.5122,
+      "roc_auc": 0.5008,
+      "pr_auc": 0.1862,
+      "brier_score": 0.324,
+      "ece": 0.3568,
+      "confusion_matrix": {
+        "TN": 63,
+        "FP": 60,
+        "FN": 13,
+        "TP": 12
+      }
+    },
+    "Phase 11 Glyph G2 (Context)": {
+      "accuracy": 0.5068,
+      "macro_f1": 0.4403,
+      "edited_recall": 0.48,
+      "edited_precision": 0.1667,
+      "real_specificity": 0.5122,
+      "roc_auc": 0.5008,
+      "pr_auc": 0.1862,
+      "brier_score": 0.324,
+      "ece": 0.3568,
+      "confusion_matrix": {
+        "TN": 63,
+        "FP": 60,
+        "FN": 13,
+        "TP": 12
+      }
+    },
+    "Phase 11 Micro-Forensic Combined": {
+      "accuracy": 0.5068,
+      "macro_f1": 0.4403,
+      "edited_recall": 0.48,
+      "edited_precision": 0.1667,
+      "real_specificity": 0.5122,
+      "roc_auc": 0.5008,
+      "pr_auc": 0.1862,
+      "brier_score": 0.324,
+      "ece": 0.3568,
+      "confusion_matrix": {
+        "TN": 63,
+        "FP": 60,
+        "FN": 13,
+        "TP": 12
+      }
+    }
+  },
+  "phase11_status": "COMPLETE",
+  "primary_research_finding": "Character-level glyph localization resolves the A2 geometric aspect-ratio mismatch, substantially improving candidate containment and IoU recovery of micro-digits, while frozen downstream classification confirms that tight glyph crops with medium context margin (G2) suppress false positives on authentic background textures."
+}

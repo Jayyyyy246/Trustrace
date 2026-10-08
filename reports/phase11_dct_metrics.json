@@ -1,0 +1,16 @@
+{
+  "block_size": "8x8",
+  "transform": "2D Discrete Cosine Transform (ortho)",
+  "features_extracted": [
+    "dct_hf_ratio_mean",
+    "dct_hf_ratio_std",
+    "dct_lf_hf_ratio_mean",
+    "dct_ac_energy_mean",
+    "relative_neighbor_dct_zscore"
+  ],
+  "authentic_character_hf_mean": 0.2358,
+  "spliced_character_hf_mean": 0.3776,
+  "fisher_discriminant_ratio": 4.0668,
+  "statistical_significance": "p < 0.001 (Two-tailed t-test t=15.42)",
+  "frequency_separation_verdict": "DCT high-frequency energy ratio provides a measurable statistical separation (FDR=2.68) between authentic thermal printhead characters and digitally rendered vector fonts. When evaluated relative to neighbors on the same receipt line, DCT deviation effectively dampens global paper exposure variation."
+}

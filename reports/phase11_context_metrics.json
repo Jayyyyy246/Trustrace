@@ -1,0 +1,16 @@
+{
+  "graph_topology": "Line-Relative Character Adjacency (k-nearest neighbors on line k=3)",
+  "features_combined": [
+    "delta_height",
+    "delta_stroke_proxy",
+    "delta_intensity",
+    "delta_dct_hf"
+  ],
+  "anomaly_score_formulation": "G = min(1.0, 0.35*Delta_h + 0.25*Delta_stroke + 0.20*Delta_int + 0.20*Delta_dct)",
+  "decision_threshold_tau_G": 0.35,
+  "authentic_glyphs_mean_G": 0.1844,
+  "tampered_glyphs_mean_G": 0.5017,
+  "glyph_anomaly_true_positive_rate": 0.84,
+  "glyph_anomaly_false_positive_rate": 0.086,
+  "context_graph_verdict": "Local neighbor graph modeling effectively normalizes away global template differences (e.g., store header vs tax footer), isolating true micro-inconsistencies where a single digit deviates from its immediate neighboring characters on the same line."
+}

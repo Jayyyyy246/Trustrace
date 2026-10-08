@@ -1,0 +1,44 @@
+{
+  "A_Phase9_Historical": {
+    "containment": 44.19,
+    "iou_10": 45.35,
+    "iou_25": 39.53,
+    "iou_50": 17.44,
+    "cands_per_doc": 48.2
+  },
+  "B_Phase10_OCR_Dense": {
+    "containment": 52.33,
+    "iou_10": 38.37,
+    "iou_25": 15.12,
+    "iou_50": 5.81,
+    "cands_per_doc": 213.7
+  },
+  "C_Phase10_Pixel_Dense": {
+    "containment": 8.14,
+    "iou_10": 4.65,
+    "iou_25": 2.33,
+    "iou_50": 0.0,
+    "cands_per_doc": 20.3
+  },
+  "D_Phase11_Glyph_G0": {
+    "containment": 1.16,
+    "iou_10": 32.56,
+    "iou_25": 30.23,
+    "iou_50": 19.77,
+    "cands_per_doc": 45.2
+  },
+  "E_Phase11_Glyph_G2_Medium": {
+    "containment": 16.28,
+    "iou_10": 32.56,
+    "iou_25": 32.56,
+    "iou_50": 17.44,
+    "cands_per_doc": 45.2
+  },
+  "F_Phase11_Glyph_All_Margins": {
+    "containment": 23.26,
+    "iou_10": 33.72,
+    "iou_25": 32.56,
+    "iou_50": 24.42,
+    "cands_per_doc": 180.8
+  }
+}

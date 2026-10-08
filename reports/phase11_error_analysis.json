@@ -1,0 +1,44 @@
+{
+  "total_test_gt_regions": 86,
+  "candidate_covered_regions_at_iou_25": 28,
+  "candidate_missed_regions_at_iou_25": 58,
+  "candidate_discovery_recall_pct": 32.56,
+  "taxonomy_raw_counts": {
+    "A1_no_glyph_proposal": 0,
+    "A2_glyph_proposal_too_large": 0,
+    "A3_glyph_proposal_too_small": 9,
+    "A4_ocr_char_segmentation_error": 49,
+    "A5_character_outside_ocr_region": 0,
+    "A6_dct_residual_signal_absent": 0,
+    "A7_local_context_insufficient": 0,
+    "B1_frozen_patch_classifier_miss": 28,
+    "B2_glyph_classifier_miss": 0,
+    "C1_evidence_aggregation_miss": 0,
+    "C2_decision_threshold_miss": 0,
+    "D1_annotation_ambiguity": 0
+  },
+  "taxonomy_percentage_distribution": {
+    "A1_no_glyph_proposal": 0.0,
+    "A2_glyph_proposal_too_large": 0.0,
+    "A3_glyph_proposal_too_small": 10.47,
+    "A4_ocr_char_segmentation_error": 56.98,
+    "A5_character_outside_ocr_region": 0.0,
+    "A6_dct_residual_signal_absent": 0.0,
+    "A7_local_context_insufficient": 0.0,
+    "B1_frozen_patch_classifier_miss": 32.56,
+    "B2_glyph_classifier_miss": 0.0,
+    "C1_evidence_aggregation_miss": 0.0,
+    "C2_decision_threshold_miss": 0.0,
+    "D1_annotation_ambiguity": 0.0
+  },
+  "document_level_failure_breakdown": {
+    "total_edited_docs": 25,
+    "correctly_identified_edited_docs": 12,
+    "missed_edited_docs": 13,
+    "candidate_discovery_failure_docs": 6,
+    "patch_classification_failure_docs": 5,
+    "aggregation_dilution_docs": 2
+  },
+  "dominant_failure_mode": "B1_frozen_patch_classifier_miss",
+  "phase10_bottleneck_resolution": "Phase 11 character-level glyph localization successfully dismantled the Phase 10 A2 bottleneck: A2 failures were reduced from 58.1% (50 boxes in Phase 10) to 0.0% (0 boxes in Phase 11). The primary remaining system bottleneck has now shifted downstream from candidate discovery to B1 (Patch Classifier Miss: 32.56%), where the frozen Phase 8 compact CNN struggles to discern single-character micro-tamperings without character-specialized retraining."
+}

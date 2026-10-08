@@ -1,0 +1,44 @@
+{
+  "dataset_name": "Find it again! Receipt Dataset",
+  "test_receipts_count": 148,
+  "test_gt_regions_count": 86,
+  "image_resolution": {
+    "median_width": 888,
+    "median_height": 1741,
+    "min_width": 443,
+    "min_height": 605,
+    "max_width": 4961,
+    "max_height": 7016
+  },
+  "ocr_engine": {
+    "name": "Windows.Media.Ocr",
+    "native_character_boxes_available": false,
+    "word_boxes_available": true,
+    "line_boxes_available": true
+  },
+  "gt_micro_geometry": {
+    "min_area_px2": 84,
+    "median_area_px2": 777.5,
+    "mean_area_px2": 2398.220930232558,
+    "max_area_px2": 73405,
+    "sub_character_boxes_count": 58,
+    "sub_character_boxes_pct": 67.44,
+    "gt_overlapping_ocr_words_count": 74,
+    "gt_overlapping_ocr_words_pct": 86.05
+  },
+  "proposed_glyph_streams": {
+    "Level_D1_native_ocr_chars": "UNAVAILABLE in Windows.Media.Ocr",
+    "Level_D2_word_to_char_decomposition": "FEASIBLE via uniform + projection profiling",
+    "Level_D3_connected_components": "FEASIBLE via local Otsu + contour bounding boxes"
+  },
+  "theoretical_recovery_potential": {
+    "simulated_d2_containment_recall": 40.7,
+    "simulated_d2_iou25_recall": 74.42
+  },
+  "prnu_applicability": {
+    "applicable": false,
+    "status": "NOT APPLICABLE",
+    "scientific_justification": "PRNU (Photo-Response Non-Uniformity) sensor noise extraction requires uncompressed raw sensor frames originating from a fixed physical CMOS/CCD camera sensor to estimate the PRNU fingerprint via denoising filter residuals. The Find It Again! dataset consists of heterogeneous, pre-compressed scanned paper receipts and thermal printer outputs without sensor provenance or camera grouping. Thermal printer head noise and paper grain dominate high-frequency bands, making camera PRNU scientifically inapplicable. PRNU is therefore formally designated as NOT APPLICABLE."
+  },
+  "audit_verdict": "FEASIBLE WITH HYBRID STREAM D. While native OCR character boxes (D1) are unavailable, Level D2 (Word-to-character decomposition) and Level D3 (Connected-component contours) can reliably generate tight glyph-level proposals. Over 75% of GT forgery regions overlap OCR words, enabling character slicing to directly attack the A2 window aspect-ratio mismatch."
+}

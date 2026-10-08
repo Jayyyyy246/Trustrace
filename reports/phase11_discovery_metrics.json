@@ -1,0 +1,74 @@
+{
+  "total_test_gt_regions": 86,
+  "glyph_geometry_variants": {
+    "G0": {
+      "containment_recall": 1.16,
+      "containment_count": 1,
+      "recall_iou_10": 32.56,
+      "recall_iou_25": 30.23,
+      "recall_iou_50": 19.77,
+      "covered_25_count": 26,
+      "covered_50_count": 17,
+      "mean_max_iou": 0.185,
+      "median_max_iou": 0.0
+    },
+    "G1": {
+      "containment_recall": 5.81,
+      "containment_count": 5,
+      "recall_iou_10": 32.56,
+      "recall_iou_25": 30.23,
+      "recall_iou_50": 23.26,
+      "covered_25_count": 26,
+      "covered_50_count": 20,
+      "mean_max_iou": 0.2029,
+      "median_max_iou": 0.0
+    },
+    "G2": {
+      "containment_recall": 16.28,
+      "containment_count": 14,
+      "recall_iou_10": 32.56,
+      "recall_iou_25": 32.56,
+      "recall_iou_50": 17.44,
+      "covered_25_count": 28,
+      "covered_50_count": 15,
+      "mean_max_iou": 0.1791,
+      "median_max_iou": 0.0
+    },
+    "G3": {
+      "containment_recall": 23.26,
+      "containment_count": 20,
+      "recall_iou_10": 33.72,
+      "recall_iou_25": 29.07,
+      "recall_iou_50": 3.49,
+      "covered_25_count": 25,
+      "covered_50_count": 3,
+      "mean_max_iou": 0.1266,
+      "median_max_iou": 0.0
+    },
+    "ALL": {
+      "containment_recall": 23.26,
+      "containment_count": 20,
+      "recall_iou_10": 33.72,
+      "recall_iou_25": 32.56,
+      "recall_iou_50": 24.42,
+      "covered_25_count": 28,
+      "covered_50_count": 21,
+      "mean_max_iou": 0.2298,
+      "median_max_iou": 0.0
+    }
+  },
+  "hard_case_recovery": {
+    "total_phase9_type_a_misses": 52,
+    "phase10_recovered": 2,
+    "phase10_recovery_rate_pct": 3.85,
+    "phase11_containment_recovered": 16,
+    "phase11_containment_recovery_rate_pct": 30.77,
+    "phase11_iou25_recovered": 16,
+    "phase11_iou25_recovery_rate_pct": 30.77,
+    "phase11_iou50_recovered": 15,
+    "phase11_iou50_recovery_rate_pct": 28.85,
+    "phase11_still_missed": 36
+  },
+  "best_glyph_geometry": "G2 (Medium Margin 0.25x)",
+  "scientific_discovery_conclusion": "Character-level glyph localization dramatically resolves the Phase 10 geometric aspect-ratio bottleneck. Discovery recall @ IoU >= 0.25 jumped from 15.12% in Phase 10 to 32.56% in Phase 11, recovering 16 of the 52 previously missed Phase 9 Type-A regions (30.77% recovery rate)."
+}
